@@ -1,0 +1,93 @@
+.special-fares-child,
+.special-fares-item {
+  position: absolute;
+  top: 0;
+  border-radius: var(--br-xl);
+  height: 12.75rem;
+  object-fit: cover;
+}
+.special-fares-child {
+  left: -0.25rem;
+  width: 23.56rem;
+}
+.special-fares-item {
+  left: 0;
+  width: 23.06rem;
+}
+.students {
+  position: absolute;
+  top: 9.06rem;
+  left: 1rem;
+  display: inline-block;
+  width: 12.56rem;
+}
+.special-fares-child1,
+.special-fares-inner {
+  position: absolute;
+  top: 0rem;
+  left: 23.81rem;
+  border-radius: var(--br-xl);
+  width: 23.63rem;
+  height: 12.75rem;
+  object-fit: cover;
+}
+.special-fares-child1 {
+  left: 24.06rem;
+  width: 23.13rem;
+}
+.senior-citizen {
+  position: absolute;
+  top: 9.06rem;
+  left: 25.06rem;
+  display: inline-block;
+  width: 12.75rem;
+}
+.special-fares-child2,
+.special-fares-child3,
+.special-fares-child4 {
+  position: absolute;
+  top: 0rem;
+  left: 47.94rem;
+  border-radius: var(--br-xl);
+  width: 23.63rem;
+  height: 12.75rem;
+  object-fit: cover;
+}
+.special-fares-child3,
+.special-fares-child4 {
+  left: 48.19rem;
+  width: 23.13rem;
+}
+.special-fares-child4 {
+  left: 72.31rem;
+}
+.army,
+.friends-family {
+  position: absolute;
+  top: 9.06rem;
+  left: 73.31rem;
+  display: inline-block;
+  width: 16.31rem;
+}
+.army {
+  left: 49.19rem;
+}
+.special-fares1 {
+  position: absolute;
+  top: 0;
+  left: 9.31rem;
+  width: 95.44rem;
+  height: 12.75rem;
+}
+.special-fares-wrapper {
+  position: absolute;
+  top: 54rem;
+  left: 0;
+  width: 90rem;
+  height: 15.75rem;
+  overflow-x: auto;
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

@@ -1,0 +1,105 @@
+
+  .frame-child6 {
+    position: absolute;
+    top: 12.56rem;
+    left: 20.5rem;
+    border-right: 2px solid var(--color-white);
+    box-sizing: border-box;
+    width: 0.13rem;
+    height: 2rem;
+  }
+  .frame-child7 {
+    position: absolute;
+    height: 5.37%;
+    width: 1.88%;
+    top: 66.16%;
+    right: 31.88%;
+    bottom: 28.47%;
+    left: 66.25%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .book1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    font-weight: 800;
+    width: 2.88rem;
+    height: 1.25rem;
+  }
+  .my-vacations1 {
+    top: 1.5rem;
+    left: 0;
+    font-weight: 800;
+    color: var(--color-cornflowerblue);
+  }
+  .icon1,
+  .logo2,
+  .my-vacations1 {
+    position: absolute;
+  }
+  .logo2 {
+    top: 0.75rem;
+    left: 14.38rem;
+    width: 8rem;
+    height: 3rem;
+    color: var(--color-yellowgreen);
+    font-family: var(--font-poppins);
+  }
+  .icon1 {
+    top: 1rem;
+    left: 10.31rem;
+    width: 3rem;
+    height: 2.5rem;
+    object-fit: cover;
+  }
+  .navigation-bar-child {
+    position: absolute;
+    top: 1.5rem;
+    left: 74.5rem;
+    width: 90rem;
+    height: 4.38rem;
+    display: none;
+  }
+  .log-in-button,
+  .navigation-bar {
+    position: absolute;
+    width: 5.75rem;
+    height: 1.94rem;
+  }
+  .log-in-button {
+    top: 0;
+    left: 0;
+  }
+  .navigation-bar {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    top: 1.5rem;
+    left: 74.5rem;
+  }
+  .frame22 {
+    position: absolute;
+  }
+  .frame26 {
+    margin-right: 2rem;
+    top: 0;
+    margin-left:-2.5rem;
+    width: 90rem;
+    height: 28.94rem;
+    overflow: hidden;
+    background-image: url(/public/Bgimg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+  }
+  .fullpage{
+    margin-right:4rem;
+  }

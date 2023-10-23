@@ -1,0 +1,9 @@
+.offer-card-4-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background: linear-gradient(-1.88deg, #000, transparent);
+  width: 17.19rem;
+  height: 12.75rem;
+}

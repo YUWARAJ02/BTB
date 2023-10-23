@@ -1,0 +1,9 @@
+.banner-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background: linear-gradient(90.28deg, #00418b, transparent);
+  width: 71.31rem;
+  height: 12.75rem;
+}

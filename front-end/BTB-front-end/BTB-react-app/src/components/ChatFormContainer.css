@@ -1,0 +1,140 @@
+.offer-card-1-item {
+  position: absolute;
+  top: 0;
+  left: -0.25rem;
+  border-radius: var(--br-xl);
+  width: 17.56rem;
+  height: 13.25rem;
+  object-fit: cover;
+}
+.biriyani {
+  position: absolute;
+  top: 10.38rem;
+  left: 1.81rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 8.35rem;
+}
+.offer-card-11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17.06rem;
+  height: 12.75rem;
+}
+.north-indian {
+  position: absolute;
+  top: 10.38rem;
+  left: 1.81rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 10.63rem;
+}
+.offer-card-31,
+.offer-card-5-item {
+  position: absolute;
+  top: 0;
+  left: 36.13rem;
+  width: 17.06rem;
+  height: 12.75rem;
+}
+.offer-card-5-item {
+  left: -0.25rem;
+  border-radius: var(--br-xl);
+  height: 13.25rem;
+  object-fit: cover;
+}
+.pizzas {
+  position: absolute;
+  top: 10.38rem;
+  left: 1.81rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 8.35rem;
+}
+.offer-card-5 {
+  position: absolute;
+  top: 0;
+  left: 72.25rem;
+  width: 17.06rem;
+  height: 12.75rem;
+}
+.thalis {
+  position: absolute;
+  top: 10.38rem;
+  left: 1.81rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 11.06rem;
+}
+.offer-card-21 {
+  position: absolute;
+  top: 0;
+  left: 18.06rem;
+  width: 17.06rem;
+  height: 12.75rem;
+}
+.download-1-icon,
+.offer-card-41 {
+  position: absolute;
+  top: 0;
+  width: 17.19rem;
+}
+.download-1-icon {
+  left: 0;
+  border-radius: var(--br-xl);
+  height: 12.63rem;
+  object-fit: cover;
+}
+.offer-card-41 {
+  left: 54.19rem;
+  height: 12.75rem;
+}
+.offer-card-6-child,
+.offer-card-6-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  width: 17.06rem;
+  height: 12.75rem;
+}
+.offer-card-6-child {
+  object-fit: cover;
+}
+.offer-card-6-item {
+  background: linear-gradient(-1.88deg, #000, transparent);
+}
+.offer-card-1-parent,
+.offer-card-6 {
+  position: absolute;
+  top: 0;
+  left: 90.31rem;
+  width: 17.06rem;
+  height: 12.75rem;
+}
+.offer-card-1-parent {
+  left: 9.38rem;
+  width: 107.38rem;
+}
+.offers-frame1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90rem;
+  height: 13.63rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+  animation: slideAnimation 8s linear infinite;
+}
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

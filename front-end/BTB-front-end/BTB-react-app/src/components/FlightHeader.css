@@ -1,0 +1,216 @@
+.book-train-tickets {
+    top: 12.88rem;
+    left: 9.38rem;
+    width: 10.31rem;
+    height: 1.44rem;
+  }
+  .book-train-tickets,
+  .check-pnr-status,
+  .from1 {
+    position: absolute;
+    display: inline-block;
+  }
+  .check-pnr-status {
+    top: 12.88rem;
+    left: 21.44rem;
+    font-weight: 500;
+    width: 10.31rem;
+    height: 1.44rem;
+  }
+  .from1 {
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 2.25rem;
+  }
+  .from {
+    top: 15.56rem;
+    left: 9.38rem;
+    width: 17.06rem;
+    height: 6rem;
+    font-size: var(--font-size-11xl);
+  }
+  .from,
+  .to,
+  .to1,
+  .to2 {
+    position: absolute;
+  }
+  .to2 {
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 2.31rem;
+    height: 2.19rem;
+  }
+  .to,
+  .to1 {
+    width: 17.06rem;
+    height: 5.94rem;
+  }
+  .to1 {
+    top: 0;
+    left: 0;
+  }
+  .to {
+    top: 15.56rem;
+    left: 27.44rem;
+    font-size: var(--font-size-11xl);
+  }
+  .frame-child6 {
+    position: absolute;
+    top: 12.56rem;
+    left: 20.5rem;
+    border-right: 2px solid var(--color-white);
+    box-sizing: border-box;
+    width: 0.13rem;
+    height: 2rem;
+  }
+  .frame-child7 {
+    position: absolute;
+    height: 5.37%;
+    width: 1.88%;
+    top: 66.16%;
+    right: 31.88%;
+    bottom: 28.47%;
+    left: 66.25%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .book1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    font-weight: 800;
+    width: 2.88rem;
+    height: 1.25rem;
+  }
+  .my-vacations1 {
+    top: 1.5rem;
+    left: 0;
+    font-weight: 800;
+    color: var(--color-cornflowerblue);
+  }
+  .icon1,
+  .logo2,
+  .my-vacations1 {
+    position: absolute;
+  }
+  .logo2 {
+    top: 0.75rem;
+    left: 14.38rem;
+    width: 8rem;
+    height: 3rem;
+    color: var(--color-yellowgreen);
+    font-family: var(--font-poppins);
+  }
+  .icon1 {
+    top: 1rem;
+    left: 10.31rem;
+    width: 3rem;
+    height: 2.5rem;
+    object-fit: cover;
+  }
+  .navigation-bar-child {
+    position: absolute;
+    top: 1.5rem;
+    left: 74.5rem;
+    background-color: var(--color-gainsboro-200);
+    width: 90rem;
+    height: 4.38rem;
+    display: none;
+  }
+  .log-in-button,
+  .navigation-bar {
+    position: absolute;
+    width: 5.75rem;
+    height: 1.94rem;
+  }
+  .log-in-button {
+    top: 0;
+    left: 0;
+  }
+  .navigation-bar {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    top: 1.5rem;
+    left: 74.5rem;
+  }
+  .date2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 9.25rem;
+    height: 2.25rem;
+  }
+  .date1 {
+    top: 0;
+    left: 0;
+    width: 17.06rem;
+    height: 6rem;
+  }
+  .date,
+  .date1,
+  .frame22 {
+    position: absolute;
+  }
+  .date {
+    top: 15.5rem;
+    left: 45.5rem;
+    width: 17.06rem;
+    height: 6rem;
+    font-size: var(--font-size-11xl);
+  }
+  .round-trip {
+    position: absolute;
+    top: 8.75rem;
+    left: 22.75rem;
+    font-weight: 800;
+    font-family: var(--font-montserrat);
+    color: var(--color-white);
+  }
+  .From1{
+    /* From */
+
+width: 96px;
+height: 36px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+  .frame24 {
+    margin-right: 2rem;
+    top: 0;
+    margin-left:-2.5rem;
+    background-image: url(/public/Bgimg.png);
+    width: 90rem;
+    height: 28.94rem;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+  }
+  .fullpage{
+    margin-right:4rem;
+  }

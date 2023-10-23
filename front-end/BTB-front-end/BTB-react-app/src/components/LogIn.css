@@ -1,0 +1,12 @@
+.log-in {
+  position: absolute;
+  top: 0.25rem;
+  left: 1.5rem;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  width: 2.81rem;
+  height: 1.44rem;
+}

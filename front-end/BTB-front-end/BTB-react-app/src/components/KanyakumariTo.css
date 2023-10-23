@@ -1,0 +1,9 @@
+.to-child {
+  position: absolute;
+  top: 2.81rem;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  width: 17.06rem;
+  height: 3.13rem;
+}

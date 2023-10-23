@@ -1,0 +1,9 @@
+.popular-places1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+}

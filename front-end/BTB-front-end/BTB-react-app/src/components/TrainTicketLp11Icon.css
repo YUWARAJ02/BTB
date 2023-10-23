@@ -1,0 +1,9 @@
+.train-ticket-lp1-1-icon {
+  position: absolute;
+  top: 0;
+  left: 9.13rem;
+  border-radius: var(--br-xl);
+  width: 17.56rem;
+  height: 13.25rem;
+  object-fit: cover;
+}

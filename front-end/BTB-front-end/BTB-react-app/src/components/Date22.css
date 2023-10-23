@@ -1,0 +1,14 @@
+.frame21 {
+  border: 0;
+  font-family: var(--font-montserrat);
+  font-size: var(--font-size-lg);
+  background-color: transparent;
+  position: absolute;
+  top: 3.81rem;
+  left: 0;
+  width: 7.63rem;
+  height: 1.38rem;
+  overflow: hidden;
+  border: none;
+  outline: none; 
+}

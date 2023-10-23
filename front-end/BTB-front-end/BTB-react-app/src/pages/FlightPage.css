@@ -1,0 +1,92 @@
+.footer{
+    top:162.5rem
+}
+.frame112{
+    position: absolute;
+    top: 120rem;
+    left: 9.44rem;
+    width: 63.81rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.frame113{
+    position: absolute;
+    top: 123.19rem;
+    left: 9.44rem;
+    width: 63.81rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.frame114{
+    position: absolute;
+    top: 126.63rem;
+    left: 9.44rem;
+    width: 63.81rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.frame115{
+    top: 130.06rem;
+    left: 9.44rem;
+    width: 63.81rem;
+    overflow: hidden;
+    position: absolute;
+    height: 1.5rem;
+}
+.frame116{
+    position: absolute;
+    top: 133.5rem;
+    left: 9.44rem;
+    width: 63.81rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.frame111 {
+    position: absolute;
+    overflow: hidden;
+    top: 72.88rem;
+    left: 9.31rem;
+    width: 71.38rem;
+    height: 12.75rem;
+    font-size: 2rem;
+    color: var(--color-white);
+  }
+  .frame999 {
+    top: 89.5rem;
+    position: absolute;
+    left: 9.44rem;
+    width: 63.81rem;
+    height: 1.75rem;
+    overflow: hidden;
+    left: 9.38rem;
+    width: 71.25rem;
+    height: 2.25rem;
+    font-size: var(--font-size-5xl);
+  }
+  .frame177 {
+    position: absolute;
+    overflow: hidden;
+    top: 94.63rem;
+    left: 9.38rem;
+    width: 71.25rem;
+    height: 15.44rem;
+    text-align: center;
+    font-size: var(--font-size-sm);
+  }
+  .frame100 {
+    position: absolute;
+    top: 113.5rem;
+    overflow: hidden;
+    left: 9.38rem;
+    width: 71.25rem;
+    height: 2.25rem;
+    font-size: var(--font-size-5xl);
+  }
+  .see-moree {
+    position: absolute;
+    top: 112.31rem;
+    left: 75.25rem;
+    font-size: var(--font-size-lg);
+    color: var(--accent);
+    cursor: pointer;
+  }

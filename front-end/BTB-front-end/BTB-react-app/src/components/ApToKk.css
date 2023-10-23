@@ -1,0 +1,9 @@
+.frame-child9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background: linear-gradient(-1.12deg, #000, transparent);
+  width: 23.13rem;
+  height: 12.75rem;
+}

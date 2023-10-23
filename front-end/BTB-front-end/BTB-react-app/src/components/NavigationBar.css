@@ -1,0 +1,10 @@
+.rectangle-nav {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-100);
+  width: 90rem;
+  height: 4.5rem;
+  opacity: 0.3;
+}

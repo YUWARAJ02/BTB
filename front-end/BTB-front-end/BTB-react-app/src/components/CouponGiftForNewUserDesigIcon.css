@@ -1,0 +1,9 @@
+.coupon-gift-for-new-user-desig-icon {
+  position: absolute;
+  top: 0.06rem;
+  left: 81.38rem;
+  border-radius: var(--br-xl);
+  width: 17.06rem;
+  height: 13.25rem;
+  object-fit: cover;
+}

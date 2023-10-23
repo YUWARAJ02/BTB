@@ -1,0 +1,252 @@
+.contact,
+.faq,
+.support {
+  position: absolute;
+  top: 3rem;
+  left: 0.01rem;
+  display: inline-block;
+  width: 4.69rem;
+}
+.faq,
+.support {
+  top: 4.94rem;
+  width: 4.75rem;
+}
+.faq {
+  top: 6.88rem;
+  width: 2.81rem;
+}
+.company,
+.contact-parent {
+  position: absolute;
+  top: 0;
+  width: 7.67rem;
+}
+.company {
+  left: 0;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+  display: inline-block;
+}
+.contact-parent {
+  left: 28.88rem;
+  height: 8.31rem;
+}
+.hotels {
+  position: absolute;
+  top: 8.25rem;
+  left: 0;
+  display: inline-block;
+  width: 3.88rem;
+}
+.quick-links {
+  top: 0;
+  font-weight: 600;
+  display: inline-block;
+  width: 9.69rem;
+}
+.flights,
+.frame18,
+.quick-links {
+  position: absolute;
+  left: 0;
+}
+.flights {
+  top: 2.44rem;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 4.13rem;
+}
+.frame18 {
+  top: 0;
+  width: 9.69rem;
+  height: 3.88rem;
+  overflow: hidden;
+  font-size: var(--font-size-base);
+  font-family: var(--font-montserrat);
+}
+.trains {
+  top: 0;
+  display: inline-block;
+  width: 3.88rem;
+}
+.bus,
+.frame19,
+.trains {
+  position: absolute;
+  left: 0;
+}
+.bus {
+  top: 1.94rem;
+  display: inline-block;
+  width: 2.19rem;
+}
+.frame19 {
+  top: 4.38rem;
+  width: 3.88rem;
+  height: 3.38rem;
+  overflow: hidden;
+}
+.hotels-parent {
+  position: absolute;
+  top: 0;
+  left: 42.75rem;
+  width: 9.69rem;
+  height: 9.69rem;
+}
+.salesbookmyvacationsnowcom {
+  top: 6.44rem;
+  width: 17.63rem;
+}
+.div,
+.salesbookmyvacationsnowcom,
+.ssv-complex-sri {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+}
+.div {
+  top: 3.75rem;
+  width: 6.75rem;
+}
+.ssv-complex-sri {
+  top: 0;
+  width: 18.81rem;
+  height: 2.5rem;
+}
+.salesbookmyvacationsnowcom-parent {
+  position: absolute;
+  top: 12.56rem;
+  left: 0.06rem;
+  width: 18.81rem;
+  height: 7.88rem;
+}
+.bookmyvacations-has-been {
+  position: absolute;
+  top: 5.56rem;
+  left: 0;
+  display: inline-block;
+  width: 22.75rem;
+}
+.email1,
+.newsletter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+.newsletter {
+  font-weight: 500;
+  width: 9.94rem;
+}
+.email1 {
+  width: 8.4rem;
+}
+.arrow-icon {
+  position: absolute;
+  top: 0.32rem;
+  left: 13.85rem;
+  border-radius: var(--br-3xs);
+  width: 1.34rem;
+  height: 0.36rem;
+}
+.email-parent {
+  position: absolute;
+  top: 0.69rem;
+  left: 0.81rem;
+  width: 15.19rem;
+  height: 1.13rem;
+}
+.email {
+  position: absolute;
+  top: 1.81rem;
+  left: 0;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+  width: 17.03rem;
+  height: 2.31rem;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-poppins);
+}
+.frame-child4 {
+  position: absolute;
+  top: 6.38rem;
+  left: 12.56rem;
+  width: 4.58rem;
+  height: 1.7rem;
+}
+.newsletter-parent {
+  position: absolute;
+  top: 0.31rem;
+  left: 54.19rem;
+  width: 17.08rem;
+  height: 8.07rem;
+  font-size: var(--font-size-base);
+  font-family: var(--font-montserrat);
+}
+.book {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  font-weight: 800;
+  width: 4rem;
+  height: 1.25rem;
+}
+.logo1,
+.my-vacations {
+  position: absolute;
+  width: 12.63rem;
+}
+.my-vacations {
+  top: 1.38rem;
+  left: 0;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  font-weight: 800;
+  color: var(--color-cornflowerblue);
+  height: 1.44rem;
+}
+.logo1 {
+  top: 0.44rem;
+  left: 5.44rem;
+  height: 2.81rem;
+}
+.icon,
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4.26rem;
+}
+.icon {
+  width: 5.11rem;
+  object-fit: cover;
+}
+.logo {
+  width: 18.06rem;
+  font-size: var(--font-size-xl);
+  color: var(--color-yellowgreen);
+}
+.footer,
+.frame-parent {
+  position: absolute;
+  top: 4.94rem;
+  left: 9.38rem;
+  width: 71.27rem;
+  height: 20.44rem;
+}
+.footer {
+  left: 0.13rem;
+  background-color: var(--color-cornsilk);
+  width: 90rem;
+  height: 29.13rem;
+  opacity: 0.91;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

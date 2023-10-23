@@ -1,0 +1,13 @@
+.kanyakumari {
+  border: 0;
+  font-family: var(--font-montserrat);
+  font-size: var(--font-size-lg);
+  background-color: transparent;
+  position: absolute;
+  top: 3.69rem;
+  left: 1.25rem;
+  color: var(--color-black);
+  text-align: left;
+  border: none;
+  outline: none; 
+}

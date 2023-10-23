@@ -1,0 +1,26 @@
+.search-trains {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.search-trains-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-smi) var(--padding-4xl);
+  background-color: var(--accent);
+  position: absolute;
+  top: 18.38rem;
+  left: 63.5rem;
+  border-radius: var(--br-3xs);
+  width: 10.31rem;
+  height: 3.13rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}

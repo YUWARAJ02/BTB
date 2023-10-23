@@ -1,0 +1,15 @@
+.frame23 {
+  position: absolute;
+  top: 50.19rem;
+  left: 9.38rem;
+  width: 71.25rem;
+  height: 2.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+  font-weight: bold;
+}
+
+
