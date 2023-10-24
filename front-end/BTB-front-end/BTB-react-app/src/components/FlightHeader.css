@@ -226,75 +226,161 @@ flex-grow: 0;
   }
  
   .frominput{
-position: absolute;
-width:14rem;
-height: 1.25rem;
 left:  9.375rem;
-top: 14.0625rem;
-background: #FFFFFF;
-border-radius: 10px;
 }
  
  .fromlabel{
-position: absolute;
 width: 96px;
-height: 36px;
 left: 150px;
-top: 179px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 37px;
-color: #FFFFFF;
  }
 .tolabel{
-  /* To */
 
-position: absolute;
 width: 14rem;
-height: 36px;
 left: 406px;
-top: 179px;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 37px;
-
-color: #FFFFFF;
-
-
 }
 .toinput{
-   /* Rectangle 13 */
-
-position: absolute;
-width: 240px;
-height: 1.25rem;
 left: 406px;
-top: 225px;
-
-background: #FFFFFF;
-border-radius: 10px;
-
 }
 .departurelabel{
-  /* Departure */
-
-position: absolute;
 width: 169px;
-height: 36px;
 left: 662px;
-top: 179px;
+}
+.departureinput{
+left: 662px;
+}
+.frominput,.toinput,.departureinput,.returninput{
+  position: absolute;
+  width:14rem;
+  height: 1.25rem;
+  background: #FFFFFF;
+  border-radius: 10px;
+  top: 14.0625rem;
+}
+.returninput{
+  Left:918px;
+}
+.returnlabel,.fromlabel,.tolabel,.departurelabel{
+  position: absolute;
+ height: 36px;
+ top: 179px;
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 30px;
+ line-height: 37px;
+ color: #FFFFFF;
+}
+.returnlabel{
+  width: 169px;
+height: 36px;
+left: 918px;
+
+}
+.roundlabel{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 4.6875rem;
+  height: 1.25rem;
+left: 16.625rem;
+top: 8.75rem;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+}
+.roundinput{
+  margin: 0;
+}
+.travellerinput{
+  width: 40px;
+  margin: 0;
+  border: none;
+  outline: none; 
+}
+.input-wrapper {
+position: absolute;
+width: 321px;
+height: 50px;
+left: 150px;
+top: 351px;
+background: #FFFFFF;
+border-radius: 10px;
+}
+.travellerlabel{
+position: absolute;
+width: 272px;
+height: 36px;
+left: 150px;
+top: 305px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 30px;
 line-height: 37px;
+color: #FFFFFF;
+}
+.classinput{
+  top: 380px;
+}
+.texttravel{
+/* 1 Traveller */
+position: absolute;
+width: 11px;
+height: 22px;
+left: 100px;
+top: 371px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 12px;
+line-height: 22px;
+/* identical to box height */
 
+color: #000000;
+
+
+}
+.onewaylabel{
+  /* One way */
+text-align: center;
+  display: flex;
+  align-items: center;
+position: absolute;
+width: 80px;
+height: 20px;
+left: 150px;
+top: 140px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 12px;
+line-height: 20px;
+
+/* identical to box height */
 color: #FFFFFF;
 
 
+}
+.searchflightsbutton:hover {
+  background: #0F6AC0; /* Change the background color on hover */
+}
+.searchflightsbutton{
+ background-color: #0C54A6;
+ width: 190px;
+ height: 50px;
+ font-family: 'Montserrat';
+ margin-left:35rem;
+ margin-top: 12.4rem;
+ font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #FFFFFF;
+cursor: pointer;
 }

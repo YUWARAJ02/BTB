@@ -21,10 +21,23 @@ const FlightHeader = () => {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
+    if (type === 'radio') {
+      setFormData({
+        ...formData,
+        tripType: value
+      });
+    } else if (type === 'checkbox') {
+      setFormData({
+        ...formData,
+        [name]: checked
+      });
+    }
+    else{
     setFormData({
       ...formData,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: value
     });
+  }
   }
 
   const handleSubmit = (e) => {
@@ -38,26 +51,31 @@ const FlightHeader = () => {
       <NavigationBar />
       <GroupComponent />
       <form onSubmit={handleSubmit}>
-        <label>
+      <div className='onewaylabel'>
+        <label  className='o'>
           <input
+             className='onewayinput'
             type="radio"
             name="oneWay"
-            value={true}
-            checked={formData.oneWay}
+            value="true"
+            checked={formData.tripType==="oneWay"}
             onChange={handleChange}
           />
           One Way
         </label>
-        <label>
+        </div>
+        <div className='roundlabel'>
+        <label className='r'>
           <input
+          className='roundinput'
             type="radio"
             name="roundTrip"
-            value={true}
-            checked={formData.roundTrip}
+            value="true"
+            checked={formData.tripType==="roundTrip"}
             onChange={handleChange}
           />
           Round Trip
-        </label><br /><br />
+        </label></div><br /><br />
         <div className="from40">
          <label htmlFor="from" className='fromlabel'>From:</label>
          <div className='frominputdiv'>
@@ -66,6 +84,7 @@ const FlightHeader = () => {
           type="text"
           id="from"
           name="from"
+          placeholder='Chennai'
           value={formData.from}
           onChange={handleChange}
         />
@@ -77,6 +96,7 @@ const FlightHeader = () => {
           type="text"
           id="to"
           name="to"
+          placeholder='Mumbai'
           value={formData.to}
           onChange={handleChange}
         /><br /><br />
@@ -91,10 +111,11 @@ const FlightHeader = () => {
           onChange={handleChange}
         /><br /><br />
 
-       {/* {formData.roundTrip && (
+        {formData.roundTrip && (
           <>
-            <label htmlFor="returnDate">Return Date:</label>
+            <label htmlFor="returnDate" className='returnlabel'>Return </label>
             <input
+              className='returninput'
               type="date"
               id="returnDate"
               name="returnDate"
@@ -103,29 +124,36 @@ const FlightHeader = () => {
             /><br /><br />
           </>
         )}
+       
+        <div className="input-container">
+  <label htmlFor="travelerCount" className='travellerlabel'>Traveller & class</label>
+ 
+  <div className="input-wrapper">
+  <p className='texttravel'>travelers</p>
+    <input
+     className='travellerinput'
+      type="number"
+      id="travelerCount"
+      name="travelerCount"
+      value={formData.travelerCount}
+      onChange={handleChange}
+    />
+    <label htmlFor="travelClass"></label>
+    <select
+      className='classinput'
+      id="travelClass"
+      name="travelClass"
+      value={formData.travelClass}
+      onChange={handleChange}
+    >
+      <option value="economy">Economy</option>
+      <option value="business">Business</option>
+      <option value="first">First Class</option>
+    </select>
+  </div>
+</div>
 
-        <label htmlFor="travelerCount">Traveler Count:</label>
-        <input
-          type="number"
-          id="travelerCount"
-          name="travelerCount"
-          value={formData.travelerCount}
-          onChange={handleChange}
-        /><br /><br />
-
-        <label htmlFor="travelClass">Travel Class:</label>
-        <select
-          id="travelClass"
-          name="travelClass"
-          value={formData.travelClass}
-          onChange={handleChange}
-        >
-          <option value="economy">Economy</option>
-          <option value="business">Business</option>
-          <option value="first">First Class</option>
-        </select><br /><br />
-
-        <input type="submit" value="Search Flights" /> */}
+        <input className='searchflightsbutton' type="submit" value="Search Flights" /> 
       </form>
       </div>
       <div className="frame-child6" />
