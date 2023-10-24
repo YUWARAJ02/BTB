@@ -17,6 +17,8 @@ const Loginsignup = () => {
 
     const userInfo = isAuthenticated ? user : null;
 
+    console.log(userInfo);
+    
     function handleGoogleLogin1() {
         // Redirect the user to Google's authentication page
         window.location.href = "https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?login_hint&response_type=code&redirect_uri=https%3A%2F%2Flogin.us.auth0.com%2Flogin%2Fcallback&scope=email%20profile&state=Fe26.2**c063bc21e204711d43f743ea997b3831c8a216dc3607f5c32be500c259f5d077*3qHqjJbxfi-8TxursieyqA*55NplyF4iB-u5HPxwT18gB8ktLAoesDnH8PVTVkYsB-5b9u2Xs8Fhup9f50x_gHwg2-73COJlcrL9TCEniHhRj5V88q50Xvu7y7OljI60Mely6z20S4_aen7ORkCCi28**60abe62de05a6c4921e6aa4967c69fa017283d2e70758971cd33378009f2ffe7*sjsdL8hD3K0KuL7G0fEoaxEommTpboY7GWhyPdR8S_c&client_id=135034099850-p02kdnahdqi4b1rtd59babpvrgfgpb4o.apps.googleusercontent.com&service=lso&o2v=1&theme=glif&flowName=GeneralOAuthFlow";

@@ -9,8 +9,8 @@ import  { Link } from "react-router-dom";
 const FlightHeader = () => {
 
   const [formData, setFormData] = useState({
-    oneWay: false,
-    roundTrip: true,
+    // oneWay: false,
+    // roundTrip: true,
     from: '',
     to: '',
     departureDate: '',
@@ -56,8 +56,8 @@ const FlightHeader = () => {
           <input
              className='onewayinput'
             type="radio"
-            name="oneWay"
-            value="true"
+            name="radio_button"
+            value="oneWay"
             checked={formData.tripType==="oneWay"}
             onChange={handleChange}
           />
@@ -69,8 +69,8 @@ const FlightHeader = () => {
           <input
           className='roundinput'
             type="radio"
-            name="roundTrip"
-            value="true"
+            name="radio_button"
+            value="roundTrip"
             checked={formData.tripType==="roundTrip"}
             onChange={handleChange}
           />
@@ -111,7 +111,7 @@ const FlightHeader = () => {
           onChange={handleChange}
         /><br /><br />
 
-        {formData.roundTrip && (
+        { (
           <>
             <label htmlFor="returnDate" className='returnlabel'>Return </label>
             <input
