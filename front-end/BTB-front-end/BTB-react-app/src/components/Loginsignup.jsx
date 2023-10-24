@@ -40,7 +40,7 @@ const Loginsignup = () => {
                         <img src={user_icon} alt=''/>
                         <input type="text" placeholder='Name'/>
                     </div>}
-                    
+                    <form></form>
                     <div className='input'>
                         <img src={email_icon} alt=''/>
                         <input type="email" placeholder='Email Id'/>

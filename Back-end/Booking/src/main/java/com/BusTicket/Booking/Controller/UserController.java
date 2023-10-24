@@ -2,13 +2,12 @@ package com.BusTicket.Booking.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.BusTicket.Booking.Entity.User;
 import com.BusTicket.Booking.Service.UserService;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -22,10 +21,10 @@ public class UserController {
 	@Autowired
 	UserService userservice;
 
-	@GetMapping
-	public ResponseEntity<?> find() {
-		return userservice.find();
-	}
+	// @GetMapping
+	// public ResponseEntity<?> find() {
+	// 	return userservice.find();
+	// }
 
 	@PostMapping("/register")
 	public ResponseEntity<?> save(@RequestBody User user) {
@@ -33,7 +32,7 @@ public class UserController {
 	}
 
 	@PostMapping("/login")
-	public ResponseEntity<?> login(@RequestBody JsonNode json) {
+	public ResponseEntity<?> login(@RequestBody String json) {
 		try {
 			return userservice.login(json);
 		} catch (JsonProcessingException e) {
@@ -42,7 +41,7 @@ public class UserController {
 		}
 	}
 
-	@PostMapping("/testJWT")
+	@PostMapping("/JWT_token")
 	public ResponseEntity<?> homepage(@RequestBody JsonNode token) {
 		try {
 			return userservice.HomePage(token);

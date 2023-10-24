@@ -36,7 +36,8 @@ public class UserService {
 		return new ResponseEntity<>(userRepository.save(user), HttpStatus.OK);
 	}
 
-	public ResponseEntity<String> login(JsonNode json) throws JsonProcessingException {
+	public ResponseEntity<String> login(String json_v) throws JsonProcessingException {
+		JsonNode json = mapper.readTree(json_v);
 		if (json == null || !json.hasNonNull("username") || !json.hasNonNull("password"))
 			return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
 

@@ -27,7 +27,7 @@ public class JwtUtil {
         String[] split_string = jwtToken.split("\\.");
         String base64EncodedHeader = split_string[0];
         String base64EncodedBody = split_string[1];
-        String base64EncodedSignature = split_string[2];
+        // String base64EncodedSignature = split_string[2];
 
         System.out.println("~~~~~~~~~ JWT Header ~~~~~~~");
         Base64 base64Url = new Base64(true);

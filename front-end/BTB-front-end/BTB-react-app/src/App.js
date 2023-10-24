@@ -11,6 +11,7 @@ import FlightPage from "./pages/FlightPage";
 import WhyUsPage from "./pages/WhyUsPage";
 import Loginsignup from "./components/Loginsignup";
 import Trains from "./components/Trains";
+import Users from "./components/API_request/User";
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -51,18 +52,26 @@ function App() {
     }
   }, [pathname]);
 
+  const json = {
+    
+      "username": "yuwaraj_t_K",
+      "password": "123"
+   }
   return (
     <div>
         <nav>
           <Link to="/"><Trains/></Link>
         </nav>
-    
+        <Users login = {json}/>
      <Routes>
        <Route path="/" element={<TrainHome />} />
        <Route path="/Flight" element={<FlightPage />} />
        <Route path="/whyus" element={<WhyUsPage />} />
        <Route path="/login" element={<Loginsignup />} />
      </Routes>
+     
+     
+     {/* <Users login = {"remove_Token"}/> */}
     </div>
     
   );
