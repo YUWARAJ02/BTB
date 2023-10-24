@@ -3,8 +3,7 @@
   top: 0;
   left: 0;
   font-size: var(--font-size-base);
-  font-weight: 800;
+  font-weight: 600;
   font-family: var(--font-montserrat);
-  color: var(--color-goldenrod);
   text-align: left;
 }

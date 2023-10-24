@@ -211,6 +211,90 @@ flex-grow: 0;
     color: var(--color-white);
     font-family: var(--font-montserrat);
   }
+  /* .fromlabel{
+    
+
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 2.25rem;
+  } */
   .fullpage{
     margin-right:4rem;
   }
+ 
+  .frominput{
+position: absolute;
+width:14rem;
+height: 1.25rem;
+left:  9.375rem;
+top: 14.0625rem;
+background: #FFFFFF;
+border-radius: 10px;
+}
+ 
+ .fromlabel{
+position: absolute;
+width: 96px;
+height: 36px;
+left: 150px;
+top: 179px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+color: #FFFFFF;
+ }
+.tolabel{
+  /* To */
+
+position: absolute;
+width: 14rem;
+height: 36px;
+left: 406px;
+top: 179px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+
+color: #FFFFFF;
+
+
+}
+.toinput{
+   /* Rectangle 13 */
+
+position: absolute;
+width: 240px;
+height: 1.25rem;
+left: 406px;
+top: 225px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+}
+.departurelabel{
+  /* Departure */
+
+position: absolute;
+width: 169px;
+height: 36px;
+left: 662px;
+top: 179px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+
+color: #FFFFFF;
+
+
+}
