@@ -1,0 +1,32 @@
+.polygon-icon {
+  position: absolute;
+  top: 0;
+  left: 3.32rem;
+  width: 2rem;
+  height: 1.88rem;
+}
+.group-child22,
+.polygon-parent {
+  position: absolute;
+  width: 31.13rem;
+}
+.group-child22 {
+  top: 1.31rem;
+  left: 0;
+  background-color: var(--color-white);
+  height: 36.81rem;
+}
+.polygon-parent {
+  top: 26.75rem;
+  left: 14.38rem;
+  height: 38.13rem;
+}
+.popup {
+  position: absolute;
+  top: 1%; /* Position it below the clickable area */
+  left: 0;
+  background-color:black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}

@@ -1,12 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect} from 'react';
 import NavigationBar from "./NavigationBar";
 import GroupComponent from "./GroupComponent";
 import Loginbutton from "./Loginbutton";
 import LogIn from "./LogIn";
 import "./FlightHeader.css";
 import  { Link } from "react-router-dom";
-
+import Travellerandclass from "./Travellerandclass";
+import "./Popuptravellers.css";
+import Popuptravellers from "./Popuptravellers"
 const FlightHeader = () => {
+  const [popupVisible, setPopupVisible] = useState(false);
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (popupVisible && !document.getElementById('popup').contains(e.target)) {
+        setPopupVisible(false);
+      }
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [popupVisible]);
+
+  const togglePopup = () => {
+    console.log('clicked')
+    setPopupVisible(!popupVisible);
+  };
 
   const [formData, setFormData] = useState({
     // oneWay: false,
@@ -124,8 +146,11 @@ const FlightHeader = () => {
             /><br /><br />
           </>
         )}
-       
-        <div className="input-container">
+          <Travellerandclass togglePopup={togglePopup} />
+      {popupVisible && (
+           <Popuptravellers/>
+      )}
+        {/* <div className="input-container">
   <label htmlFor="travelerCount" className='travellerlabel'>Traveller & class</label>
  
   <div className="input-wrapper">
@@ -151,7 +176,7 @@ const FlightHeader = () => {
       <option value="first">First Class</option>
     </select>
   </div>
-</div>
+</div> */}
 
         <input className='searchflightsbutton' type="submit" value="Search Flights" /> 
       </form>

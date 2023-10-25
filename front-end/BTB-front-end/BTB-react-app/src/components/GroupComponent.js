@@ -1,30 +1,35 @@
+
+import React from 'react';
+import { Link, useLocation } from "react-router-dom";
 import Trains from "./Trains";
 import Hotels from "./Hotels";
 import Flights from "./Flights";
 import Bus from "./Bus";
 import "./GroupComponent.css";
-import { Link } from "react-router-dom";
-import React, { useState } from 'react';
 
-const GroupComponent = () => {
-  
-  const [isClicked, setIsClicked] = useState(false);
 
-  const handleClick = () => {
-    setIsClicked(true);
-  }
+function  GroupComponent(){
+  const location = useLocation();
 
+    let trainStyle = {};
+    if (location.pathname === '/') {
+      trainStyle = { color: 'var(--color-white)', position: 'absolute',
+      top: 0,
+      left: 0,
+      fontSize:'var(--font-size-base)',
+      fontWeight: 600,
+      fontFamily: 'var(--font-montserrat)',
+      textAlign: 'left'};
+    }
   return (
     <div className="trains-parent">
-
-      <Link to="/" onClick={handleClick}
-        style={{ color: isClicked ? 'var(--color-goldenrod)' : 'var(--color-white)' }}><Trains /></Link>
-      <Hotels />
-      <Link to="/Flight"><Flights /></Link>
-      <Bus />
+      <Link to="/"><Trains style={trainStyle}/></Link>
+      <Link to="/hotel" ><Hotels/></Link>
+      <Link to="/flight" ><Flights/></Link>
+      <Link to="/bus" ><Bus/></Link>
       <div className="frame-child5" />
     </div>
   );
-};
+  }
 
 export default GroupComponent;

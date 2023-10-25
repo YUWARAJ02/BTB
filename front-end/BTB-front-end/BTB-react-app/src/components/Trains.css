@@ -6,4 +6,5 @@
   font-weight: 600;
   font-family: var(--font-montserrat);
   text-align: left;
+  color:var(--color-white);
 }

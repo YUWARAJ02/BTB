@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
-import "./Trains.css";
+import "./Trains.css"
+import { useNavigate } from 'react-router-dom';
+
 const Trains = () => {
-  const [isClicked, setIsClicked] = useState(false);
 
-  const handleClick = () => {
-    setIsClicked(true);
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate('/'); // Replace with the desired route
   }
-
-  return <div className="trains1">
-   <div 
-        onClick={handleClick}
-        style={{ color: isClicked ? 'var(--color-goldenrod)' : 'var(--color-white)' }}
-      >
+  return <div className="trains1" onClick={handleClick}>
         Trains
       </div>
-    </div>;
 };
 
 export default Trains;

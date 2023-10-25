@@ -1,0 +1,44 @@
+.traveller-class1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-11xl);
+  display: inline-block;
+  color: var(--color-white);
+  width: 17rem;
+  height: 2.25rem;
+}
+.to-child1 {
+  position: absolute;
+  top: 2.88rem;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  width: 20.06rem;
+  height: 4.81rem;
+}
+.traveller1 {
+  top: 4.13rem;
+  left: 1.25rem;
+  font-weight: 600;
+}
+.economy2,
+.to8,
+.traveller1 {
+  position: absolute;
+}
+.economy2 {
+  top: 5.06rem;
+  left: 13.38rem;
+  font-weight: 500;
+}
+.to8 {
+  top: 19.06rem;
+  left: 9.38rem;
+  width: 20.06rem;
+  height: 7.69rem;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}

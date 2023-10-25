@@ -18,6 +18,7 @@
   height: 1.63rem;
   text-align: left;
   font-size: var(--font-size-base);
-  color: var(--color-white);
   font-family: var(--font-montserrat);
+  color: var(--color-white);
 }
+

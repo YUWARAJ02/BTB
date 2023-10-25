@@ -5,7 +5,7 @@
   font-size: var(--font-size-base);
   font-weight: 600;
   font-family: var(--font-montserrat);
-  color: var(--color-white);
   text-align: left;
   cursor: pointer;
+  color: var(--color-white);
 }

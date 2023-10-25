@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="fullpage">
+    
     <div className="frame25">
       <NavigationBar />
       <b className="book-train-tickets">Book Train Tickets</b>

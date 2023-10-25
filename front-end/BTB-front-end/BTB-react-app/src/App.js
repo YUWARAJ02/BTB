@@ -3,15 +3,12 @@ import {
   Routes,
   Route,
   useNavigationType,
-  Link,
   useLocation,
 } from "react-router-dom";
 import TrainHome from "./pages/TrainHome";
 import FlightPage from "./pages/FlightPage";
 import WhyUsPage from "./pages/WhyUsPage";
 import Loginsignup from "./components/Loginsignup";
-import Trains from "./components/Trains";
-import Users from "./components/API_request/User";
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -59,16 +56,15 @@ function App() {
    }
   return (
     <div>
-        <nav>
-          <Link to="/"><Trains/></Link>
-        </nav>
-        <Users login = {json}/>
-     <Routes>
+     
+      <Routes>
+        
        <Route path="/" element={<TrainHome />} />
        <Route path="/Flight" element={<FlightPage />} />
        <Route path="/whyus" element={<WhyUsPage />} />
        <Route path="/login" element={<Loginsignup />} />
-     </Routes>
+       </Routes>
+     
      
      
      {/* <Users login = {"remove_Token"}/> */}
