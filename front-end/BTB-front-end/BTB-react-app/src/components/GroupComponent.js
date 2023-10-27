@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import Trains from "./Trains";
 import Hotels from "./Hotels";
 import Flights from "./Flights";
@@ -23,7 +23,7 @@ function  GroupComponent(){
     }
   return (
     <div className="trains-parent">
-      <Link to="/"><Trains style={trainStyle}/></Link>
+      <Trains/>
       <Link to="/hotel" ><Hotels/></Link>
       <Link to="/flight" ><Flights/></Link>
       <Link to="/bus" ><Bus/></Link>

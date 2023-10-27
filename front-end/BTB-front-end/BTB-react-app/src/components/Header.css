@@ -185,3 +185,122 @@
 .fullpage{
   margin-right:4rem;
 }
+.fromlabel1{
+  /* From */
+
+position: absolute;
+width: 96px;
+height: 36px;
+left: 150px;
+top: 249px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+
+color: #FFFFFF;
+
+
+}
+.frominput1{
+  /* Rectangle 13 */
+
+position: absolute;
+width: 260px;
+height: 40px;
+left: 150px;
+top: 295px;
+font-size: 20px;
+background: #FFFFFF;
+border-radius: 10px;
+
+}
+.tolabel1{
+  /* To */
+
+position: absolute;
+width: 37px;
+height: 35px;
+left: 439px;
+top: 249px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+
+color: #FFFFFF;
+
+
+}
+.toinput1{
+  /* Rectangle 13 */
+
+position: absolute;
+width: 260px;
+height: 40px;
+left: 439px;
+top: 294px;
+font-size: 20px;
+background: #FFFFFF;
+border-radius: 10px;
+
+}
+.departureinput1{
+  /* Rectangle 13 */
+
+position: absolute;
+width: 265px;
+height: 40px;
+left: 728px;
+top: 294px;
+font-size: 20px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+}
+.departurelabel1{
+  /* Date */
+
+position: absolute;
+width: 148px;
+height: 36px;
+left: 728px;
+top: 248px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+
+color: #FFFFFF;
+
+
+}
+.searchtrainsbutton{
+  /* Frame 1 */
+
+/* Auto layout */
+background-color: #0C54A6;
+ width: 190px;
+ height: 50px;
+ font-family: 'Montserrat';
+ margin-left:65rem;
+ margin-top: 14rem;
+ font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #FFFFFF;
+cursor: pointer;
+
+}
+.searchtrainsbutton:hover {
+  background: #0F6AC0; /* Change the background color on hover */
+}

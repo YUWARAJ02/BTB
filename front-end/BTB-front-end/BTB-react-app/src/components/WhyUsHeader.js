@@ -11,7 +11,7 @@ const WhyUsHeader = () => {
       <NavigationBar />
       <GroupComponent/>
       <div className="frame-child6" />
-      <div className="logo">
+      <div className="logo44">
         <i className="book1">{`Book `}</i>
         <i className="my-vacations1">MY VACATIONS</i>
       </div>

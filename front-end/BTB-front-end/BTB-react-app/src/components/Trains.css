@@ -7,4 +7,5 @@
   font-family: var(--font-montserrat);
   text-align: left;
   color:var(--color-white);
+  cursor: pointer;
 }

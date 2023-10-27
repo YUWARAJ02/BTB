@@ -9,90 +9,13 @@
   .why-us1 {
     margin-left:20px;
   }
-  .safety-first,
-  .services-of-expert {
-    position: absolute;
-    top: 494px;
-    left: 150px;
-    font-size: var(--font-size-xl);
-  }
-  .services-of-expert {
-    top: 708px;
-  }
-  .need-we-say,
-  .outstanding-personalised-servi,
-  .we-care-for,
-  .you-are-always {
-    position: absolute;
-    top: 942px;
-    left: 150px;
-    font-size: var(--font-size-xl);
-  }
-  .need-we-say,
-  .we-care-for,
-  .you-are-always {
-    top: 1096px;
-  }
-  .need-we-say,
-  .you-are-always {
-    top: 1390px;
-  }
-  .need-we-say {
-    top: 1504px;
-    left: 153px;
-  }
-  .quality-controls-are {
-    margin: 0;
-  }
-  .quality-controls-are-container,
-  .the-presence-of-container {
-    position: absolute;
-    top: 538px;
-    left: 150px;
-    font-weight: 500;
-    display: inline-block;
-    width: 1140px;
-    opacity: 0;
-  }
-  .as-exciting-as-container.animate,
-  .discover-the-enchanting-container.animate,
-  .quality-controls-are-container.animate,
-  .the-presence-of-container.animate,
-  .we-always-aim-container.animate,
-  .were-members-of.animate {
-    animation: 1s ease 0s 1 normal forwards fade-in;
-  }
-  .the-presence-of-container {
-    top: 752px;
-  }
-  .as-exciting-as-container,
-  .discover-the-enchanting-container,
-  .we-always-aim-container,
-  .were-members-of {
-    position: absolute;
-    top: 986px;
-    left: 150px;
-    font-weight: 500;
-    display: inline-block;
-    width: 1140px;
-    opacity: 0;
-  }
-  .as-exciting-as-container,
-  .we-always-aim-container,
-  .were-members-of {
-    top: 1140px;
-  }
-  .we-always-aim-container,
-  .were-members-of {
-    top: 1434px;
-  }
-  .we-always-aim-container {
-    top: 1548px;
-    left: 153px;
-  }
+  
   .fullpage{
     margin-left: 2.5rem; 
   }
   .ft{
     margin-left: 2.5rem; 
   }
+.para.animate,.why-us1.animate{
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
