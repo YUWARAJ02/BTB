@@ -1,75 +1,24 @@
-import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import TrainHome from "./pages/TrainHome";
 import FlightPage from "./pages/FlightPage";
 import WhyUsPage from "./pages/WhyUsPage";
-import Loginsignup from "./components/Loginsignup";
+import Login from './components/Loginsignup';
+import Signup from './components/signup';
+
 function App() {
-  const action = useNavigationType();
-  const location = useLocation();
-  const pathname = location.pathname;
+  // ... (existing code)
 
-  useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
-
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
-
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/flight-home":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
-
-  const json = {
-    
-      "username": "yuwaraj_t_K",
-      "password": "123"
-   }
   return (
     <div>
-     
       <Routes>
-        
-       <Route path="/" element={<TrainHome />} />
-       <Route path="/Flight" element={<FlightPage />} />
-       <Route path="/whyus" element={<WhyUsPage />} />
-       <Route path="/login" element={<Loginsignup />} />
-       </Routes>
-     
-     
-     
-     {/* <Users login = {"remove_Token"}/> */}
+        <Route path="/" element={<TrainHome />} />
+        <Route path="/Flight" element={<FlightPage />} />
+        <Route path="/whyus" element={<WhyUsPage />} />
+        <Route path="/login" element={<Login />} /> {/* Updated route for Login */}
+        <Route path="/signup" element={<Signup />} /> {/* Added route for Signup */}
+      </Routes>
     </div>
-    
   );
 }
+
 export default App;

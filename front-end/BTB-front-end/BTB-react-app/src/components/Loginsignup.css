@@ -53,12 +53,7 @@
     color: #797979;
     font-size: 19px;
 }
-.forgot-password{
-    padding-left: 62px;
-    margin-top: 27px;
-    color: #797979;
-    font-size: 18px;
-}
+
 .forgot-password span{
     color: #4c00b4;
     cursor: pointer;
@@ -67,6 +62,7 @@
     display:flex;
     gap: 30px;
     margin: 60px auto;
+    color: #2a00b7;
 }
 .submit{
     display: flex;
@@ -142,4 +138,72 @@ p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+/* Loginsignup.css */
+
+/* Add phone number input styling */
+.input input[type="tel"] {
+    background-size: 15px;
+    padding-left: 40px; /* Adjust as needed */
+}
+/* Loginsignup.css */
+
+.highlighted-text {
+    color: red; /* Change the color to your preferred highlight color */
+    font-weight: bold; /* Make the text bold or adjust font-weight as needed */
+  }
+  .forgot-password {
+    color: #007bff; /* Change the color to your preference */
+    cursor: pointer;
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add some space between the password input and the link */
+    display:block;
+     /* Make the link a block element to take full width */
+    
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Add underline on hover for visual feedback */
+}
+.highlighted-text {
+    color: #007bff; /* Change the color to your preference */
+    cursor: pointer;
+}
+
+.highlighted-text:hover {
+    text-decoration: underline; /* Add underline on hover for visual feedback */
+}
+.inputs {
+    position: relative;
+}
+
+.input {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.forgot-password {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 20px;
+    display: block;
+    margin-top: 500px;
+    position: absolute;
+    left: 10px;
+    bottom: -35px;
+}
+.signup-text{
+    cursor: pointer;
+    font-size: 18px;
+    position:absolute;
+    bottom: 250px;
+    margin-top: 20px;
+    display: block;
+    left:720px;
+}
+.highlighted-text{
+    color: red;
+}
+.submit-container{
+    color: #42006c;
 }

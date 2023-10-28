@@ -1,23 +1,15 @@
 import React, { useState } from 'react';
 import './Loginsignup.css';
+import user_icon from "./Assets/person.png";
 import email_icon from "./Assets/email.png";
 import password_icon from "./Assets/password.png";
 import { Link } from 'react-router-dom';
-const handleSignUp = () => {
-    // Redirect logic can go here if needed
-}
 
-
-const Login = () => {
-    const [action, setAction] = useState("Login");
-
-    const handleLogin = () => {
-        console.log('Login logic goes here');
+const Signup = () => {
+    const [action, setAction] = useState("Sign Up");
+    const handleSignUp = () => {
     }
-
-    const handleForgotPassword = () => {
-        console.log('Forgot Password logic goes here');
-    }
+    
 
     return (
         <div className='background'>
@@ -27,6 +19,10 @@ const Login = () => {
                     <div className='underline'></div>
                 </div>
                 <div className='inputs'>
+                    <div className='input'>
+                        <img src={user_icon} alt='' />
+                        <input type="text" placeholder='Name' />
+                    </div>
                     <form></form>
                     <div className='input'>
                         <img src={email_icon} alt='' />
@@ -35,18 +31,20 @@ const Login = () => {
                     <div className='input'>
                         <img src={password_icon} alt='' />
                         <input type="password" placeholder='Password' />
-                        <span className="forgot-password" onClick={handleForgotPassword}>Forgot Password ?</span>
                     </div>
+                    {action === "Sign Up" &&
+                        <div className='input'>
+                            <img src={password_icon} alt='' />
+                            <input type="date" placeholder='Date-Of-Birth' />
+                        </div>
+                    }
                 </div>
                 <div className="submit-container">
-                    <div className={action === 'Login' ? 'submit gray' : "submit"} onClick={handleLogin}>Login</div>
+                    <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }}>Sign Up</div>
                 </div>
-                <div className="signup-text">
-                New user! <Link to="/signup" className="highlighted-text">Sign up.</Link>
-    </div>
             </div>
         </div>
     )
 }
 
-export default Login;
+export default Signup;
