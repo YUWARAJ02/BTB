@@ -34,6 +34,7 @@ public class UserController {
 	@PostMapping("/login")
 	public ResponseEntity<?> login(@RequestBody String json) {
 		try {
+			System.out.println(json);
 			return userservice.login(json);
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();

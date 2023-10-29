@@ -6,7 +6,7 @@ import Hotels from "./Hotels";
 import Flights from "./Flights";
 import Bus from "./Bus";
 import "./GroupComponent.css";
-
+import Loginbutton from "./Loginbutton";
 
 function  GroupComponent(){
   const location = useLocation();
@@ -23,11 +23,15 @@ function  GroupComponent(){
     }
   return (
     <div className="trains-parent">
-      <Trains/>
+      <Link to="/" ><Trains/></Link>
       <Link to="/hotel" ><Hotels/></Link>
       <Link to="/flight" ><Flights/></Link>
       <Link to="/bus" ><Bus/></Link>
-      <div className="frame-child5" />
+      {/* <div className="frame-child5" /> */}
+      <div className="log-in-button">
+          <Loginbutton />
+          
+        </div>
     </div>
   );
   }

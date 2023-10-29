@@ -1,12 +1,35 @@
-import { useCallback } from "react";
+// Loginbutton.js
+import { useRef, useState } from "react";
 import "./Loginbutton.css";
+import Login from './Loginsignup';
+import LogIn from "./LogIn";
+import { useEffect } from 'react';
+
 
 const Loginbutton = () => {
-  const onRectangle1Click = useCallback(() => {
-    // Please sync "Login" to the project
-  }, []);
+  const [loginpop, setLoginpop] = useState(false);
+  
+  const refone = useRef(null)
 
-  return <div className="log-in-button-child" onClick={onRectangle1Click} />;
+  useEffect(() => {
+    document.addEventListener("click", handleClick, true)
+  })
+  const handleClick = (e) => {
+    if (!refone.current.contains(e.target)) {
+      setLoginpop(false);
+    } 
+  }
+  return (
+    <div ref={refone}>
+      <button className="log-in-button-child" onClick={() => {
+        setLoginpop(!loginpop);
+        }}>
+        <LogIn />
+      </button>
+
+      {loginpop && <Login />}
+      </div>
+  );
 };
 
 export default Loginbutton;

@@ -2,8 +2,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: var(--br-xl);
-  background: linear-gradient(-1.88deg, #000, transparent);
+  /* border-radius: var(--br-xl); */
+  background: black;
   width: 17.06rem;
   height: 12.75rem;
 }

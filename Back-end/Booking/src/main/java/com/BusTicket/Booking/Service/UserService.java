@@ -38,18 +38,23 @@ public class UserService {
 
 	public ResponseEntity<String> login(String json_v) throws JsonProcessingException {
 		JsonNode json = mapper.readTree(json_v);
-		if (json == null || !json.hasNonNull("username") || !json.hasNonNull("password"))
+		if (json == null || !json.hasNonNull("email") || !json.hasNonNull("password"))
 			return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
 
 		logger.info("--------------------------------------------------------------");
-		logger.info(json.get("username").asText() + "  " + json.get("password").asText());
+		logger.info(json.get("email").asText() + "  " + json.get("password").asText());
 
-		Long userId = userRepository.findUserIdByUsernameAndPassword(json.get("username").asText(),
+		Long userId = userRepository.findUserIdByEmailIdAndPassword(json.get("email").asText(),
 				json.get("password").asText());
+		if(userId!=null) {
 		Map<String, String> res = new HashMap<>();
 		res.put("status", "ok");
 		res.put("auth_token", JwtUtil.generateToken(userId));
 		return new ResponseEntity<>(mapper.writeValueAsString(res), HttpStatus.OK);
+		}
+		else {
+			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 	public ResponseEntity<?> HomePage(JsonNode json) throws JsonMappingException, JsonProcessingException {

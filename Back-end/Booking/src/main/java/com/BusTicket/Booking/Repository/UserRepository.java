@@ -10,9 +10,9 @@ import com.BusTicket.Booking.Entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    @Query("SELECT u.uid FROM User u WHERE u.username = :username AND u.password = :password")
-    Long findUserIdByUsernameAndPassword(
-            @Param("username") String username,
+    @Query("SELECT u.uid FROM User u WHERE u.emailid = :emailid AND u.password = :password")
+    Long findUserIdByEmailIdAndPassword(
+            @Param("emailid") String emailid,
             @Param("password") String password);
 
     List<User> findByUsernameAndPassword(String username, String password);

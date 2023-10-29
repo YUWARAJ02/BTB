@@ -21,3 +21,13 @@
   font-family: var(--font-montserrat);
   color: var(--color-white);
 }
+.log-in-button,
+.navigation-bar {
+  position: absolute;
+  width: 5.75rem;
+  height: 1.94rem;
+}
+.log-in-button {
+  top: 0;
+  left: 0;
+}
