@@ -1,14 +1,15 @@
 .container {
     /* Rectangle 34 */
 
-    position: fixed;
-    /* width: 562px; */
+    position:fixed;
+     width: 30%;
     /* height: 417px; */
-    /* left: -70% ; */
+     left: 20% ; 
     /* top: 164px; */
+    top: 10%;
 
     background: #FFFFFF;
-    border-radius: 18px;
+    border-radius: 10%;
 
 }
 
@@ -71,12 +72,15 @@
 }
 
 .submit-container {
-    display: flex;
-    gap: 30px;
-    margin: 60px auto;
+    display: fixed;
+    /* gap: 30px; */
+    margin: 80px auto;
+    
+    margin-left:35%;
+}
+.submit:hover{
     color: #2a00b7;
 }
-
 .submit {
     display: flex;
     justify-content: center;
@@ -117,13 +121,6 @@ input {
     margin-top: 10px;
 }
 
-.social-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    margin: 0 5px;
-}
 
 .social-icon {
     width: 30px;
@@ -222,8 +219,4 @@ p {
     left: 1%;
     bottom: -85%;
     text-decoration: none;
-}
-
-.submit-container {
-    color: #42006c;
 }

@@ -12,8 +12,10 @@ function App() {
 
   return (
     <div>
+      <TrainHome/>
       <NavigationBar />
-      
+    
+
     </div>
   );
 }
