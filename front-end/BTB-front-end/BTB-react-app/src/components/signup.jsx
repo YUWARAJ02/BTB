@@ -12,7 +12,7 @@ const Signup = () => {
     
 
     return (
-        <div className='background'>
+       
             <div className='container'>
                 <div className="header">
                     <div className='text'>{action}</div>
@@ -43,7 +43,7 @@ const Signup = () => {
                     <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }}>Sign Up</div>
                 </div>
             </div>
-        </div>
+        
     )
 }
 

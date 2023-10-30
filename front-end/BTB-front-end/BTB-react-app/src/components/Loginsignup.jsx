@@ -4,6 +4,7 @@ import email_icon from "./Assets/email.png";
 import password_icon from "./Assets/password.png";
 import { Link } from 'react-router-dom';
 import Users from './API_request/User';
+import Signup from './signup';
 
 const handleSignUp = () => {
     // Redirect logic can go here if needed
@@ -16,6 +17,7 @@ const Login = () => {
         password: '',
     });
     const [emailError, setEmailError] = useState('');
+    const [signinpop, signin]=useState(false);
 
     const handleLogin = async () => {
         if (!validateEmail(formData.email)) {
@@ -50,7 +52,8 @@ const Login = () => {
         return emailPattern.test(email);
     }
 
-    return (
+    if (!signinpop){
+        return (
         <form onSubmit={(e) => {
             e.preventDefault();
             handleLogin();
@@ -82,7 +85,8 @@ const Login = () => {
                             onChange={handleChange}
                         />
                         <span className="forgot-password" onClick={handleForgotPassword}>Forgot Password ?</span>
-                        <Link to="/signup" className="signup-text">New user!</Link>
+                        {/* <Link to="/signup" className="signup-text">New user!</Link> */}
+                        <div className='signup-text' onClick={()=>{signin(true);console.log(signinpop)}} >New user!</div>
                     </div>
                 </div>
                 <div className="submit-container">
@@ -91,6 +95,13 @@ const Login = () => {
             </div>
         </form>
     )
+    if(signinpop) {
+        console.log(signinpop)
+        return(
+        <><Signup/></>
+    )
+        }
+    }
 }
 
 export default Login;
