@@ -1,3 +1,4 @@
+
 import "./pages/global.css"
 import React from 'react';
 import TrainHome from "./pages/TrainHome"
@@ -12,7 +13,9 @@ import NavigationBar from "./components/NavigationBar";
 function App() {
   // ... (existing code)
 
+
   return (
+ 
     
     <div>
       
@@ -24,7 +27,8 @@ function App() {
      </div>
     
   
+
+   
   );
 }
-
-export default App;
+export default App ;

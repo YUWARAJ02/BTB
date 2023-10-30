@@ -3,7 +3,7 @@ import './Loginsignup.css';
 import email_icon from "./Assets/email.png";
 import password_icon from "./Assets/password.png";
 import { Link } from 'react-router-dom';
-import Users from './API_request/User'; // You need to import the component handling the API request
+import Users from './API_request/User';
 
 const handleSignUp = () => {
     // Redirect logic can go here if needed
@@ -25,10 +25,7 @@ const Login = () => {
             setEmailError('');
 
             try {
-                // Send the loginData to the server using an API request
                 const response = await Users(formData);
-                // console.log(formData);
-                // Process the response or handle errors here
                 console.log('API response:', response);
             } catch (error) {
                 console.error('API error:', error);
@@ -49,15 +46,14 @@ const Login = () => {
     }
 
     const validateEmail = (email) => {
-        // Simple email validation using a regular expression
         const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
         return emailPattern.test(email);
     }
 
     return (
         <form onSubmit={(e) => {
-            e.preventDefault(); // Prevent the default form submission behavior
-            handleLogin(); // Call your login function when the form is submitted
+            e.preventDefault();
+            handleLogin();
         }}>
             <div className='container'>
                 <div className="header">
