@@ -93,25 +93,8 @@
   font-weight: 800;
   color: var(--color-cornflowerblue);
 }
-.icon1,
-.logo2,
 .my-vacations1 {
   position: absolute;
-}
-.logo2 {
-  top: 0.75rem;
-  left: 14.38rem;
-  width: 8rem;
-  height: 3rem;
-  color: var(--color-yellowgreen);
-  font-family: var(--font-poppins);
-}
-.icon1 {
-  top: 1rem;
-  left: 10.31rem;
-  width: 3rem;
-  height: 2.5rem;
-  object-fit: cover;
 }
 .navigation-bar-child {
   position: absolute;

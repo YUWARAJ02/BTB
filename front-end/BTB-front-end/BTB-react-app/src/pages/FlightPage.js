@@ -53,10 +53,6 @@ const FlightPage = () => {
     };
   }, []);
 
-  const onSeeMoreTextClick = useCallback(() => {
-    // Please sync "Why us" to the project
-  }, []);
-
   return (
     
     <div className="fullpage">

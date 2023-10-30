@@ -22,44 +22,44 @@ import {
 } from "react-router-dom";
 
 const TrainHome = () => {
-  useEffect(() => {
-    const scrollAnimElements = document.querySelectorAll(
-      "[data-animate-on-scroll]"
-    );
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting || entry.intersectionRatio > 0) {
-            const targetElement = entry.target;
-            targetElement.classList.add("animate");
-            observer.unobserve(targetElement);
-          }
-        }
-      },
-      {
-        threshold: 0.15,
-      }
-    );
+  // useEffect(() => {
+  //   const scrollAnimElements = document.querySelectorAll(
+  //     "[data-animate-on-scroll]"
+  //   );
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       for (const entry of entries) {
+  //         if (entry.isIntersecting || entry.intersectionRatio > 0) {
+  //           const targetElement = entry.target;
+  //           targetElement.classList.add("animate");
+  //           observer.unobserve(targetElement);
+  //         }
+  //       }
+  //     },
+  //     {
+  //       threshold: 0.15,
+  //     }
+  //   );
 
-    for (let i = 0; i < scrollAnimElements.length; i++) {
-      observer.observe(scrollAnimElements[i]);
-    }
+  //   for (let i = 0; i < scrollAnimElements.length; i++) {
+  //     observer.observe(scrollAnimElements[i]);
+  //   }
 
-    return () => {
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.unobserve(scrollAnimElements[i]);
-      }
-    };
-  }, []);
+  //   return () => {
+  //     for (let i = 0; i < scrollAnimElements.length; i++) {
+  //       observer.unobserve(scrollAnimElements[i]);
+  //     }
+  //   };
+  // }, []);
 
-  const onSeeMoreTextClick = useCallback(() => {
-    // Please sync "Why us" to the project
-  }, []);
+  // const onSeeMoreTextClick = useCallback(() => {
+  //   // Please sync "Why us" to the project
+  // }, []);
 
   return (
     
     <div className="fullpage">
-    <div className="train-home" data-animate-on-scroll>
+    {/* <div className="train-home" data-animate-on-scroll>
       <div className="train-home-child" />
       <div className="train-home-item" />
       <div className="train-home-inner" />
@@ -67,7 +67,6 @@ const TrainHome = () => {
       <div className="see-more" >
        <Link to="/whyus">See more</Link> 
       </div>
-      <Footer />
       <Header />
       <article className="frame" id="offers" data-animate-on-scroll>
         <OffersFrame />
@@ -176,7 +175,17 @@ const TrainHome = () => {
         <img className="frame-icon2" alt="" src="/frame3.svg" />
         <img className="frame-icon3" alt="" src="/frame4.svg" />
       </div>
-    </div>
+    </div> */}
+  
+    <header className="head">
+    <Header/>
+    </header>
+    <main>
+    <article className="frame" id="offers" data-animate-on-scroll>
+        <OffersFrame />
+        <Layer2Icon />
+      </article>
+    </main>
     </div>
   );
 };

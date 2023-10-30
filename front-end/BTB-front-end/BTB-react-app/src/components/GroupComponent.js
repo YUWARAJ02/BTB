@@ -22,17 +22,18 @@ function  GroupComponent(){
       textAlign: 'left'};
     }
   return (
+    <>
     <div className="trains-parent">
       <Link to="/" ><Trains/></Link>
       <Link to="/hotel" ><Hotels/></Link>
       <Link to="/flight" ><Flights/></Link>
       <Link to="/bus" ><Bus/></Link>
       {/* <div className="frame-child5" /> */}
-      <div className="log-in-button">
-          <Loginbutton />
-          
-        </div>
+      <Loginbutton/>
+        
     </div>
+     
+     </>
   );
   }
 

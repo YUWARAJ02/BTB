@@ -1,10 +1,13 @@
 .hotels1 {
   position: absolute;
   top: 0;
-  left: 29.65%;
+  right: 60%;
   font-size: var(--font-size-base);
   font-weight: 600;
   font-family: var(--font-montserrat);
   color: var(--color-white);
   text-align: left;
+}
+.hotels1:hover {
+  color: #FFC845; /* Change to desired color */
 }
