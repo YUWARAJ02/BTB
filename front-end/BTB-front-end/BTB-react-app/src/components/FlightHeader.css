@@ -78,41 +78,7 @@
     overflow: hidden;
     max-height: 100%;
   }
-  .book1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    font-weight: 800;
-    width: 2.88rem;
-    height: 1.25rem;
-  }
-  .my-vacations1 {
-    top: 1.5rem;
-    left: 0;
-    font-weight: 800;
-    color: var(--color-cornflowerblue);
-  }
-  .icon1,
-  .logo2,
-  .my-vacations1 {
-    position: absolute;
-  }
-  .logo2 {
-    top: 0.75rem;
-    left: 14.38rem;
-    width: 8rem;
-    height: 3rem;
-    color: var(--color-yellowgreen);
-    font-family: var(--font-poppins);
-  }
-  .icon1 {
-    top: 1rem;
-    left: 10.31rem;
-    width: 3rem;
-    height: 2.5rem;
-    object-fit: cover;
-  }
+ 
   .navigation-bar-child {
     position: absolute;
     top: 1.5rem;

@@ -1,9 +1,8 @@
 
 import "./Travellerandclass.css";
-import React from 'react';
-const Travellerandclass = ({togglePopup}) => {
+const Travellerandclass = () => {
   return (
-    <div className="clickable-area" onClick={togglePopup}>
+    <div className="clickable-area" >
     <div className="to8">
       <b className="traveller-class1">{`Traveller & Class`}</b>
       <div className="to-child1" />

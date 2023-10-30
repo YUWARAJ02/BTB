@@ -1,22 +1,29 @@
-import { Routes, Route } from "react-router-dom";
-import TrainHome from "./pages/TrainHome";
-import FlightPage from "./pages/FlightPage";
-import WhyUsPage from "./pages/WhyUsPage";
-import Login from './components/Loginsignup';
-import Signup from './components/signup';
+import "./pages/global.css"
+import React from 'react';
+import TrainHome from "./pages/TrainHome"
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
+
+
+
+
 
 
 function App() {
   // ... (existing code)
 
   return (
-    <div>
-      <TrainHome/>
-      <NavigationBar />
     
-
-    </div>
+    <div>
+      
+      <NavigationBar/>
+      <Routes>
+      <Route path="/"element={<TrainHome/>}></Route>
+      </Routes>
+      
+     </div>
+    
+  
   );
 }
 

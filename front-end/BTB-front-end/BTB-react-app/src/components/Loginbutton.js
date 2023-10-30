@@ -2,7 +2,6 @@
 import { useRef, useState } from "react";
 import "./Loginbutton.css";
 import Login from './Loginsignup';
-import LogIn from "./LogIn";
 import { useEffect } from 'react';
 
 
@@ -24,7 +23,7 @@ const Loginbutton = () => {
       <button className="log-in-button-child" onClick={() => {
         setLoginpop(!loginpop);
         }}>
-        <LogIn />
+        Log in
       </button>
 
       {loginpop && <Login />}

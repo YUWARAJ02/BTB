@@ -38,12 +38,11 @@ const Header = () => {
     console.log(formData);
   }
   return (
+    
     <div className="fullpage">
-
       <div className="frame25">
         <form onSubmit={handleSubmit}>
-
-          <div className="from400">
+          <div className='formcomponents'>
             <label htmlFor="from" className='fromlabel1'>From:</label>
             <div className='frominputdiv'>
               <input
@@ -55,7 +54,7 @@ const Header = () => {
                 value={formData.from}
                 onChange={handleChange}
               />
-            </div>
+            
           </div>
           <label htmlFor="to" className='tolabel1'>To:</label>
           <input
@@ -76,30 +75,16 @@ const Header = () => {
             value={formData.departureDate}
             onChange={handleChange}
           /><br /><br />
+          <div className='searchT'>
           <input className='searchtrainsbutton' type="submit" value="Search Trains" />
+          </div>
+          </div>
         </form>
-        
         <b className="book-train-tickets">Book Train Tickets</b>
-        <div className="check-pnr-status">Check PNR Status</div>
-        
-
+        <b className="check-pnr-status">Check PNR Status</b>
       </div>
-      
       <div className="frame-child6" />
-      <img className="frame-child7" alt="" src="/group-75.svg" />
-      <div className="logo2">
-        <i className="book1">{`Book `}</i>
-        <i className="my-vacations1">MY VACATIONS</i>
-      </div>
-      <img className="icon1" alt="" src="/20230930134049922-1@2x.png" />
-      <div className="navigation-bar">
-        <div className="navigation-bar-child" />
-
-      </div>
-
     </div>
-
-
 
   );
 };
