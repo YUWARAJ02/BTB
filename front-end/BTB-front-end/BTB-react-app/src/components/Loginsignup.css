@@ -228,10 +228,8 @@ p {
     position: fixed;
     top: 50%;
     left: 50%;
-    background: #FFFFFF;
-   
-    
-   
+    background: #FFFFFF; 
   }
-  
-  
+.background-page{
+    background-color:red;
+}  
