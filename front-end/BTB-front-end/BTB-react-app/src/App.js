@@ -1,9 +1,10 @@
 
+import NavigationBar from "./components/NavigationBar";
+import {Routes,Route} from "react-router-dom";
 import "./pages/global.css"
 import React from 'react';
-import TrainHome from "./pages/TrainHome"
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import NavigationBar from "./components/NavigationBar";
+import Header from "./components/Header";
+import TrainHome from "./pages/TrainHome";
 
 
 
@@ -18,13 +19,9 @@ function App() {
  
     
     <div>
-      
       <NavigationBar/>
-      <Routes>
-      <Route path="/"element={<TrainHome/>}></Route>
-      </Routes>
-      
-     </div>
+      <TrainHome/>
+   </div>
     
   
 

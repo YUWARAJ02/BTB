@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation} from "react-router-dom";
 import Trains from "./Trains";
 import Hotels from "./Hotels";
@@ -7,9 +7,11 @@ import Flights from "./Flights";
 import Bus from "./Bus";
 import "./GroupComponent.css";
 import Loginbutton from "./Loginbutton";
+import UserIcon from './UserIcon';
 
 function  GroupComponent(){
   const location = useLocation();
+  const [condition,setCondition]=useState(true);
 
     let trainStyle = {};
     if (location.pathname === '/') {
@@ -29,8 +31,11 @@ function  GroupComponent(){
       <Link to="/flight" ><Flights/></Link>
       <Link to="/bus" ><Bus/></Link>
       {/* <div className="frame-child5" /> */}
-      <Loginbutton/>
-        
+      {condition ? (
+          <UserIcon />
+        ) : (
+          <Loginbutton />
+        )}
     </div>
      
      </>
