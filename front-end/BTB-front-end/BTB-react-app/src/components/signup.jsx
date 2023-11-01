@@ -12,7 +12,8 @@ const Signup = () => {
     
 
     return (
-        <div className='background'>
+        <div className='popup'>
+            <div className='background-page'>
             <div className='container'>
                 <div className="header">
                     <div className='text'>{action}</div>
@@ -42,6 +43,7 @@ const Signup = () => {
                 <div className="submit-container">
                     <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }}>Sign Up</div>
                 </div>
+            </div>
             </div>
         </div>
     )
