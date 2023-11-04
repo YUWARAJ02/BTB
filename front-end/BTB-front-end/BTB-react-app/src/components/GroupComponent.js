@@ -11,7 +11,7 @@ import UserIcon from './UserIcon';
 
 function  GroupComponent(){
   const location = useLocation();
-  const [condition,setCondition]=useState(true);
+  const [condition,setCondition]=useState(false);
 
     let trainStyle = {};
     if (location.pathname === '/') {

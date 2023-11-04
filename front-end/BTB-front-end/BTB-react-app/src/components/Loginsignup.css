@@ -45,6 +45,7 @@
 
 .input {
     display: flex;
+    position: fixed;
     align-items: center;
     margin: auto;
     width: 480px;
@@ -76,11 +77,12 @@
     display: fixed;
     /* gap: 30px; */
     margin: 80px auto;
-    
+    color: #2a00b7;
     margin-left:30%;
 }
 .submit:hover{
-    color: #2a00b7;
+    color: #FFFFFF;
+    background-color: #2a00b7;
 }
 .submit {
     display: flex;
