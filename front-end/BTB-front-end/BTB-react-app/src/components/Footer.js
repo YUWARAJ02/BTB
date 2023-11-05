@@ -21,18 +21,12 @@ const Footer = () => {
             <div className="bus">Bus</div>
           </div>
         </div>
-        <div className="salesbookmyvacationsnowcom-parent">
-          <div className="salesbookmyvacationsnowcom">
-            sales@bookmyvacationsnow.com
-          </div>
-          <div className="div">94422 39333</div>
-          <div className="ssv-complex-sri">
-            SSV Complex, Sri Sarada College Road, Fairlands, Salem - 636 016.
-          </div>
-        </div>
         <div className="bookmyvacations-has-been">
           Bookmyvacations has been a leading award-winning travel company, tour
-          operator and experiential destination management company (DMC).
+          operator and experiential destination management company (DMC).<br></br><br></br>
+          SSV Complex, Sri Sarada College Road, Fairlands, Salem - 636 016.<br></br><br></br>
+          94422 39333<br></br><br></br>
+          sales@bookmyvacationsnow.com
         </div>
         <div className="newsletter-parent">
           <div className="newsletter">Newsletter</div>

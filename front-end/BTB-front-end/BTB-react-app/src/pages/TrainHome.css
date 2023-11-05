@@ -54,18 +54,102 @@
   position: absolute;
   top:70%;
   left: 4%;
+  font-family: poppins;
 }
 .popularplacetitle{
   position: absolute;
-  top:110%;
+  top:109%;
   left: 4%;
+  font-family: poppins;
 }
 .not{
   position: absolute;
   width: 100%;
   height:33%;
   top: 120%;
-  background-color: red;
+
+}
+.divideplace{
+  position: absolute;
+  width: 100%;
+  height:30%;
+  top: 160%;
+}
+.meal{
+  position: absolute;
+  top: 190%;
+  left: 4%;
+  font-family: poppins;
+}
+.tree{
+  position: absolute;
+  width: 100%;
+  height:30%;
+  top: 200%;
+}
+.us{
+  position: absolute;
+  top: 230%;
+  left: 4%;
+  font-family: poppins;
+}
+.savetime{
+  position: absolute;
+  width: 100%;
+  height:35%;
+  top: 240%;
+}
+.spacefaq{
+  position: absolute;
+  width: 100%;
+  height:78%;
+  top: 285%;
+  background-color: rgb(255, 0, 200);
+}
+.foot{
+  position: absolute;
+  width: 100%;
+  height:50%;
+  top: 375%;
+align-items: center;
+}
+.can1,.can2,.can3,.can4{
+  position: absolute;
+  background-color:#D8EDFC;
+  top: 4.5%;
+  height: 90%;
+  width: 18%;
+  border: 2px solid #DEDEDE;
+  border-radius: var(--br-xl);
+  text-align: center;
+}
+.can1{
+  left: 3%;
+}
+.can2{
+  left: 28%;
+}
+.can3{
+  left: 53%;
+}
+.can4{
+  left: 78%;
+}
+.savestimes,.costefficient,.offerstext,.foodtext{
+  position: absolute;
+  left: 32%;
+  top: 50%;
+  font-family: poppins;
+  font-weight: 600;
+}
+.costefficient{
+   left: 30%;
+}
+.offerstext{
+   left: 40%;
+}
+.foodtext{
+  left: 42%;
 }
 .frame.animate {
   animation: 1s ease 0s 1 normal forwards roll-in-left;
@@ -357,8 +441,8 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--color-gainsboro-100);
   box-sizing: border-box;
-  width: 17.06rem;
-  height: 15.44rem;
+  width: 24%;
+  height: 100%;
 }
 .ipsum-dolor-sit {
   position: absolute;
@@ -435,42 +519,20 @@
   width: 71.25rem;
 }
 .frame-icon,
-.frame-icon1 {
+.frame-icon1,.frame-icon3,.frame-icon2 {
   position: absolute;
   top: 0;
-  left: 5.06rem;
-  width: 6.91rem;
+  left:20%;
+  width: 60%;
   height: 6.08rem;
   overflow: hidden;
 }
-.frame-icon1 {
-  left: 24.56rem;
-  width: 4.06rem;
-  height: 6.25rem;
-}
-.frame-icon2 {
-  top: 0;
-  left: 42.63rem;
-  width: 3.87rem;
-  height: 6.25rem;
-}
-.frame-icon2,
-.frame-icon3,
+
 .frame17 {
-  position: absolute;
-  overflow: hidden;
-}
-.frame-icon3 {
   top: 0;
-  left: 60.69rem;
-  width: 4.06rem;
-  height: 6.25rem;
-}
-.frame17 {
-  top: 107.63rem;
-  left: 9.38rem;
-  width: 71.25rem;
-  height: 15.44rem;
+  left: 12%;
+  width: 100%;
+  height: 100%;
   text-align: center;
   font-size: var(--font-size-sm);
 }

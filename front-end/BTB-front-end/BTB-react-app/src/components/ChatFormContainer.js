@@ -12,7 +12,7 @@ const ChatFormContainer = () => {
         <div className="offer-card-11">
           <img
             className="offer-card-1-item"
-            alt=""
+            alt="briyani"
             src="/rectangle-14@2x.png"
           />
           <Briyani />
@@ -21,7 +21,7 @@ const ChatFormContainer = () => {
         <div className="offer-card-31">
           <img
             className="offer-card-1-item"
-            alt=""
+            alt="north"
             src="/rectangle-141@2x.png"
           />
           <NorthIndian />
@@ -30,8 +30,8 @@ const ChatFormContainer = () => {
         <div className="offer-card-5">
           <img
             className="offer-card-5-item"
-            alt=""
-            src="/rectangle-142@2x.png"
+            alt="pizza"
+            src="rectangle-142@2x.png"
           />
           <Pizzas />
           <div className="pizzas">Pizzas</div>
@@ -39,7 +39,7 @@ const ChatFormContainer = () => {
         <div className="offer-card-21">
           <img
             className="offer-card-1-item"
-            alt=""
+            alt="thalis"
             src="/rectangle-143@2x.png"
           />
           <Thalis />
@@ -53,7 +53,7 @@ const ChatFormContainer = () => {
         <div className="offer-card-6">
           <img
             className="offer-card-6-child"
-            alt=""
+            alt="south"
             src="/rectangle-144@2x.png"
           />
           <div className="offer-card-6-item" />
