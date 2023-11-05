@@ -26,7 +26,7 @@ public class EmailService {
         javaMailSender.send(message);
     }
     
-    public void sendHtmlEmail(String to[], String subject, String htmlContent) throws MessagingException {
+    public void sendHtmlEmail(String to, String subject, String htmlContent) throws MessagingException {
         MimeMessage message = javaMailSender.createMimeMessage();
 
         // Use the true flag to indicate you are sending an HTML email
@@ -38,7 +38,7 @@ public class EmailService {
         javaMailSender.send(message);
     }
     
-    public String otpContent(String mailId) {
+    public String otpContent(String mailId, String otp) {
     	
     	StringBuilder sb = new StringBuilder("");
     	
@@ -67,7 +67,7 @@ public class EmailService {
     			+ "                        BOOK MY VACATIONS received a request to change password for <a style=\"font-weight:bold\">"+mailId+"</a>"
     			+ "                        <br><br>Use this code to change password"
     			+ "                        setting :<br>"
-    			+ "                        <div style=\"text-align:center;font-size:36px;margin-top:20px;line-height:44px\">313572"
+    			+ "                        <div style=\"text-align:center;font-size:36px;margin-top:20px;line-height:44px\">"+ otp
     			+ "                        </div><br>This code will expire in 24 hours.<br><br>If you don’t recognize <a"
     			+ "                            style=\"font-weight:bold\">"+mailId+"</a>, you can safely ignore this"
     			+ "                        email."
@@ -76,11 +76,10 @@ public class EmailService {
     			+ "                <div style=\"text-align:left\">"
     			+ "                    <div"
     			+ "                        style=\"font-family:Roboto-Regular,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.54);font-size:11px;line-height:18px;padding-top:12px;text-align:center\">"
-    			+ "                        <div>You received this email to let you know about important changes to your Google"
-    			+ "                            Account and services.</div>"
-    			+ "                        <div style=\"direction:ltr\">© 2023 Google LLC, <a class=\"m_6512990496430930532afal\""
+    			+ "                        <div>You received this email to let you know about important changes to your BOOK MY VACATIONS.</div>"
+    			+ "                        <div style=\"direction:ltr\">© 2023 BOOK MY VACATIONS LLC, <a class=\"m_6512990496430930532afal\""
     			+ "                                style=\"font-family:Roboto-Regular,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.54);font-size:11px;line-height:18px;padding-top:12px;text-align:center\">1600"
-    			+ "                                Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div>"
+    			+ "                                Chennai, India</a></div>"
     			+ "                    </div>"
     			+ "                </div>"
     			+ "            </td>"

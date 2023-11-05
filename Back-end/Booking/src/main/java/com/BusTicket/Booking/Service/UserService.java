@@ -1,6 +1,11 @@
 package com.BusTicket.Booking.Service;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -13,12 +18,11 @@ import org.springframework.stereotype.Service;
 import com.BusTicket.Booking.Config.JwtUtil;
 import com.BusTicket.Booking.Entity.User;
 import com.BusTicket.Booking.Repository.UserRepository;
+import com.BusTicket.Booking.utils.Common;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import jakarta.mail.MessagingException;
 
 @Service
 public class UserService {
@@ -68,19 +72,56 @@ public class UserService {
 		return new ResponseEntity<Long>(res.get("id").asLong(), HttpStatus.OK);
 	}
 
-	public ResponseEntity<?> OtpVerification() {
+	// send otp mail and save in db
+	public ResponseEntity<?> SendOtp(String emailId) {
 
 		try {
-			String to[] = { "yuwaraj02@gmail.com" };
 
-			emailService.sendHtmlEmail(to, "testing", emailService.otpContent(to[0]));
+			String otp = Common.generateOTP(4);
+			User user = userRepository.findByemailid(emailId);
+
+			emailService.sendHtmlEmail(emailId, "OTP Verification", emailService.otpContent(emailId,otp));
+			user.setOtp(otp + "," + getNextDayDate(new Date()));
+			userRepository.save(user);
 			return new ResponseEntity<String>("mail sent", HttpStatus.OK);
 
-		} catch (MessagingException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			return new ResponseEntity<String>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 
 		}
 	}
 
+	// check otp is valid or not
+	public ResponseEntity<?> VerifyOtp(String emailId, String otp) {
+
+		User user = userRepository.findByemailid(emailId);
+
+		String otpValue[] = user.getOtp().split(",");
+		if (otpValue[0].equalsIgnoreCase(otp)) {
+			SimpleDateFormat dateFormat = new SimpleDateFormat("E MMM dd HH:mm:ss z yyyy", Locale.US);
+
+			try {
+				Date storedDate = dateFormat.parse(otpValue[1]);
+
+				if (new Date().before(storedDate))
+					return new ResponseEntity<String>("success", HttpStatus.OK);
+				else
+					return new ResponseEntity<String>("otpExpired", HttpStatus.NOT_ACCEPTABLE);
+			} catch (ParseException e) {
+				// Handle parsing exception
+				e.printStackTrace();
+				return new ResponseEntity<String>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+			}
+		}
+		return new ResponseEntity<String>("wrongOtp", HttpStatus.NOT_ACCEPTABLE);
+
+	}
+	
+	public Date getNextDayDate(Date currentDate) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(currentDate);
+        calendar.add(Calendar.DAY_OF_MONTH, 1); // Add one day to the current date
+        return calendar.getTime();
+    }
 }
