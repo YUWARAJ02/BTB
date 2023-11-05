@@ -2,6 +2,7 @@ package com.BusTicket.Booking.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -64,10 +65,18 @@ public class UserController {
 	}
 	
 	@GetMapping("/otp")
-	public ResponseEntity<?> otpCall() {
+	public ResponseEntity<?> otpCall(@RequestBody String emailId) {
 	
-		return userservice.OtpVerification();
+		return userservice.SendOtp(emailId);
 		
+	}
+	
+	@PostMapping("/verifyotp")
+	public ResponseEntity<?> VerifyOtp(@RequestBody JsonNode otpvalue) {
+		if(otpvalue.has("emailId") && otpvalue.has("otp")) 
+			return userservice.VerifyOtp(otpvalue.get("emailId").asText(), otpvalue.get("otp").asText());
+		
+		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 
 }

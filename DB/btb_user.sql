@@ -29,8 +29,10 @@ CREATE TABLE `user` (
   `password` varchar(255) DEFAULT NULL,
   `phoneno` bigint DEFAULT NULL,
   `username` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `otp` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`uid`),
+  UNIQUE KEY `username_UNIQUE` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +41,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'06-03-2002','yuwaraj02@gmail.com','123',9677166596,'yuwaraj_t_K'),(2,'11-11-2002','yuwarajtk@gmail.com','123',123456689,'karthick');
+INSERT INTO `user` VALUES (1,'06-03-2002','yuwaraj02@gmail.com','123',9677166596,'yuwaraj_t_K','9261,Mon Nov 06 21:19:31 IST 2023'),(2,'11-11-2002','yuwarajtk@gmail.com','123',123456689,'karthick',NULL),(4,'06-03-2002','srgls@gmail.com','123',5463563,'aaa',NULL),(5,NULL,NULL,NULL,NULL,NULL,NULL),(6,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-09-18 17:07:34
+-- Dump completed on 2023-11-05 21:25:16
