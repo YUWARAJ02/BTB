@@ -5,6 +5,7 @@ import "./pages/global.css"
 import React from 'react';
 import Header from "./components/Header";
 import TrainHome from "./pages/TrainHome";
+import BusHome from "./pages/BusHome";
 
 
 
@@ -20,7 +21,7 @@ function App() {
     
     <div>
       <NavigationBar/>
-      <TrainHome/>
+      <BusHome/>
    </div>
     
   
