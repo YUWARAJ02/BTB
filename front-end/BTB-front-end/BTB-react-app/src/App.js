@@ -5,6 +5,11 @@ import "./pages/global.css"
 import React from 'react';
 import Header from "./components/Header";
 import TrainHome from "./pages/TrainHome";
+<<<<<<< HEAD
+import Forgetpassword from "./components/Forgetpassword";
+=======
+import BusHome from "./pages/BusHome";
+>>>>>>> 1620fe499730c2ea71936bec2e753e591979f3d2
 
 
 
@@ -20,7 +25,14 @@ function App() {
     
     <div>
       <NavigationBar/>
-      <TrainHome/>
+<<<<<<< HEAD
+      <Routes>
+    <Route path="/" element={<TrainHome/>}/>
+    <Route path="/forgetpassword" element={<Forgetpassword/>}/>
+    </Routes>
+=======
+      <BusHome/>
+>>>>>>> 1620fe499730c2ea71936bec2e753e591979f3d2
    </div>
     
   

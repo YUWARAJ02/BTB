@@ -193,8 +193,44 @@ const TrainHome = () => {
        Popular places
       </h1>
       <article className="not">
+        <ApToKk/>
+        <ChennaiToDelhi/>
+        <DelhiToKolkata/>
       </article>
+      <article className="divideplace">
+        <BookTicketsimg/>
+      </article>
+      <h1 className="meal"> Meals on Wheels</h1>
+      <article className="tree">
+        <ChatFormContainer/>
+      </article>
+      <h1 className="us">Why Choose Us </h1>
+      <article className="savetime">
+      <div className="can1">
+      <img className="frame-icon" alt="" src="/frame1.svg" />
+      <div className="savestimes">Saves time</div>
+      </div>
+      <div className="can2">
+      <img className="frame-icon1" alt="" src="/frame2.svg" />
+      <div className="costefficient">Cost Efficient</div>
+      </div>
+      <div className="can3">
+      <img className="frame-icon2" alt="" src="/frame3.svg" />
+      <div className="offerstext">Offers</div>
+      </div>
+      <div className="can4">
+      <img className="frame-icon3" alt="" src="/frame4.svg" />
+      <div className="foodtext">Food</div>
+      </div>
+        
+        
+       
+       
+      </article>
+      <article className="spacefaq"></article>
     </main>
+    <footer className="foot"><Footer></Footer></footer>
+
     </div>
   );
 };

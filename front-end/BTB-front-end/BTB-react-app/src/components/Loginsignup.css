@@ -111,13 +111,16 @@ input {
 }
 
 .background {
-    height: 120vh;
-    background: linear-gradient(#2a00b7, #42006c);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    
 }
-
 .social-login {
     display: flex;
     justify-content: center;
@@ -230,8 +233,12 @@ p {
     position: fixed;
     top: 50%;
     left: 50%;
-    background: #FFFFFF; 
+    background: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 .background-page{
     background-color:red;
 }  
+.fuller{
+    height: 100%;
+}

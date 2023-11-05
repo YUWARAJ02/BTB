@@ -1,0 +1,1189 @@
+.bg-img-icon1 {
+    height: 463px;
+    object-fit: cover;
+  }
+  .bg-img-icon1,
+  .train-home-child,
+  .train-home-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+  }
+  .train-home-child {
+    background-color: var(--color-gray-100);
+    height: 72px;
+    opacity: 0.3;
+  }
+  .train-home-item {
+    background: linear-gradient(90.78deg, #000, transparent);
+    height: 464px;
+  }
+  .book-train-tickets,
+  .check-pnr-status {
+    position: absolute;
+    top: 206px;
+    left: 150px;
+    display: inline-block;
+    font-family: var(--font-montserrat);
+    color: var(--color-white);
+    width: 165px;
+    height: 23px;
+  }
+  .check-pnr-status {
+    left: 343px;
+    font-weight: 500;
+  }
+  .trains2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 800;
+    color: var(--color-goldenrod);
+  }
+  .hotels2 {
+    left: 29.65%;
+  }
+  .bus2,
+  .flights2,
+  .hotels2 {
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+  }
+  .flights2 {
+    left: 59.29%;
+    cursor: pointer;
+  }
+  .bus2 {
+    left: 90.04%;
+  }
+  .frame-item {
+    position: absolute;
+    height: 7.69%;
+    width: 11.06%;
+    top: 92.31%;
+    right: 89.16%;
+    bottom: 0;
+    left: -0.22%;
+    border-top: 2px solid var(--color-black);
+    box-sizing: border-box;
+    display: none;
+  }
+  .trains-group {
+    position: absolute;
+    top: 28px;
+    left: calc(50% - 19px);
+    width: 452px;
+    height: 26px;
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+  }
+  .search-trains {
+    position: relative;
+    font-weight: 600;
+  }
+  .search-trains-wrapper {
+    position: absolute;
+    top: 294px;
+    left: 1016px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-darkslateblue);
+    width: 165px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-smi) var(--padding-4xl);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+  }
+  .meals-on-wheels,
+  .offers2,
+  .popular-places,
+  .why-choose-us1 {
+    position: absolute;
+    top: 494px;
+    left: 150px;
+    font-size: var(--font-size-5xl);
+  }
+  .meals-on-wheels,
+  .popular-places,
+  .why-choose-us1 {
+    top: 803px;
+  }
+  .meals-on-wheels,
+  .why-choose-us1 {
+    top: 1352px;
+  }
+  .why-choose-us1 {
+    top: 1661px;
+  }
+  .quis-autem-vel1,
+  .sed-ut-perspiciatis2,
+  .sed-ut-perspiciatis3 {
+    position: absolute;
+    top: 2227px;
+    left: 151px;
+    display: inline-block;
+    width: 986px;
+  }
+  .quis-autem-vel1,
+  .sed-ut-perspiciatis3 {
+    top: 2337px;
+  }
+  .quis-autem-vel1 {
+    top: 2282px;
+  }
+  .faqs1 {
+    position: absolute;
+    top: 2046px;
+    left: 150px;
+    font-size: var(--font-size-5xl);
+  }
+  .banner-inner,
+  .rectangle-div {
+    position: absolute;
+    top: 0;
+    border-radius: var(--br-xl);
+  }
+  .banner-inner {
+    left: -4px;
+    width: 1149px;
+    height: 212px;
+    object-fit: cover;
+  }
+  .rectangle-div {
+    left: 0;
+    background: linear-gradient(90.28deg, #00418b, transparent);
+    width: 1141px;
+    height: 204px;
+  }
+  .book-tickets-in1 {
+    margin: 0;
+  }
+  .book-tickets-in-container1 {
+    position: absolute;
+    top: 64px;
+    left: 81px;
+    line-height: 40px;
+  }
+  .banner1 {
+    position: absolute;
+    top: 1118px;
+    left: 150px;
+    width: 1141px;
+    height: 204px;
+    font-size: var(--font-size-13xl);
+    color: var(--color-white);
+  }
+  .excepteur-sint-occaecat2 {
+    top: 2112px;
+    font-weight: 600;
+    width: 946px;
+  }
+  .excepteur-sint-occaecat2,
+  .excepteur-sint-occaecat3,
+  .lorem-ipsum-dolor2 {
+    position: absolute;
+    left: 151px;
+    display: inline-block;
+  }
+  .lorem-ipsum-dolor2 {
+    top: 2146px;
+    font-size: var(--font-size-mini);
+    width: 946px;
+  }
+  .excepteur-sint-occaecat3 {
+    top: 2392px;
+    font-weight: 600;
+    width: 986px;
+  }
+  .image-1-icon1,
+  .instant-cashback-lp-1-icon1,
+  .train-ticket-lp1-1-icon1 {
+    position: absolute;
+    top: 0;
+    left: 435px;
+    border-radius: var(--br-xl);
+    width: 281px;
+    height: 212px;
+    object-fit: cover;
+  }
+  .image-1-icon1,
+  .train-ticket-lp1-1-icon1 {
+    left: 724px;
+  }
+  .train-ticket-lp1-1-icon1 {
+    left: 146px;
+  }
+  .coupon-gift-for-new-user-desig-icon1,
+  .phonepe-irctc-ticket-booking-o-icon1 {
+    position: absolute;
+    top: 0;
+    left: 1017px;
+    border-radius: var(--br-xl);
+    width: 273px;
+    height: 204px;
+    object-fit: cover;
+  }
+  .coupon-gift-for-new-user-desig-icon1 {
+    top: 1px;
+    left: 1302px;
+    height: 212px;
+  }
+  .offers-frame-item {
+    position: absolute;
+    top: 51px;
+    left: 1387px;
+    background-color: var(--color-gainsboro-300);
+    width: 344px;
+    height: 96px;
+  }
+  .offers-frame1 {
+    top: 555px;
+    width: 1440px;
+    height: 218px;
+    overflow: hidden;
+  }
+  .from-item,
+  .from3,
+  .offers-frame1 {
+    position: absolute;
+    left: 0;
+  }
+  .from3 {
+    top: 0;
+    display: inline-block;
+    width: 96px;
+    height: 36px;
+  }
+  .from-item {
+    top: 46px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    width: 273px;
+    height: 50px;
+  }
+  .chennai2,
+  .from2 {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: var(--font-size-lg);
+    color: var(--color-black);
+  }
+  .from2 {
+    top: 249px;
+    left: 150px;
+    width: 273px;
+    height: 96px;
+    font-size: var(--font-size-11xl);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+  }
+  .to-inner,
+  .to4,
+  .to5 {
+    position: absolute;
+    left: 0;
+  }
+  .to5 {
+    top: 0;
+    display: inline-block;
+    width: 37px;
+    height: 35px;
+  }
+  .to-inner,
+  .to4 {
+    width: 273px;
+  }
+  .to-inner {
+    top: 45px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    height: 50px;
+  }
+  .to4 {
+    top: 0;
+    height: 95px;
+  }
+  .kanyakumari,
+  .to3 {
+    position: absolute;
+    top: 59px;
+    left: 20px;
+    font-size: var(--font-size-lg);
+    color: var(--color-black);
+  }
+  .to3 {
+    top: 249px;
+    left: 439px;
+    width: 273px;
+    height: 95px;
+    font-size: var(--font-size-11xl);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+  }
+  .date1,
+  .date2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .date2 {
+    display: inline-block;
+    width: 148px;
+    height: 36px;
+  }
+  .date1 {
+    width: 273px;
+    height: 96px;
+  }
+  .date,
+  .oct-sun {
+    position: absolute;
+    top: 61px;
+    left: 20px;
+    font-size: var(--font-size-lg);
+    color: var(--color-black);
+  }
+  .date {
+    top: 248px;
+    left: 728px;
+    width: 273px;
+    height: 96px;
+    font-size: var(--font-size-11xl);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+  }
+  .offer-card-1-inner,
+  .offer-card-1-item {
+    position: absolute;
+    top: 0;
+    border-radius: var(--br-xl);
+  }
+  .offer-card-1-item {
+    left: -4px;
+    width: 281px;
+    height: 212px;
+    object-fit: cover;
+  }
+  .offer-card-1-inner {
+    left: 0;
+    background: linear-gradient(-1.88deg, #000, transparent);
+    width: 273px;
+    height: 204px;
+  }
+  .biriyani {
+    position: absolute;
+    top: 166px;
+    left: 29px;
+    font-weight: 600;
+    display: inline-block;
+    width: 133.5px;
+  }
+  .offer-card-11 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 273px;
+    height: 204px;
+  }
+  .north-indian {
+    position: absolute;
+    top: 166px;
+    left: 29px;
+    font-weight: 500;
+    display: inline-block;
+    width: 170px;
+  }
+  .offer-card-31,
+  .offer-card-5-child {
+    position: absolute;
+    top: 0;
+    left: 578px;
+    width: 273px;
+    height: 204px;
+  }
+  .offer-card-5-child {
+    left: -4px;
+    border-radius: var(--br-xl);
+    height: 212px;
+    object-fit: cover;
+  }
+  .pizzas {
+    position: absolute;
+    top: 166px;
+    left: 29px;
+    font-weight: 500;
+    display: inline-block;
+    width: 133.5px;
+  }
+  .offer-card-5 {
+    position: absolute;
+    top: 0;
+    left: 1156px;
+    width: 273px;
+    height: 204px;
+  }
+  .thalis {
+    position: absolute;
+    top: 166px;
+    left: 29px;
+    font-weight: 500;
+    display: inline-block;
+    width: 177px;
+  }
+  .offer-card-21 {
+    position: absolute;
+    top: 0;
+    left: 289px;
+    width: 273px;
+    height: 204px;
+  }
+  .download-1-icon,
+  .offer-card-4-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-xl);
+    width: 275px;
+  }
+  .download-1-icon {
+    height: 202px;
+    object-fit: cover;
+  }
+  .offer-card-4-item {
+    background: linear-gradient(-1.88deg, #000, transparent);
+    height: 204px;
+  }
+  .offer-card-41,
+  .offer-card-6-child {
+    position: absolute;
+    top: 0;
+    left: 867px;
+    width: 275px;
+    height: 204px;
+  }
+  .offer-card-6-child {
+    left: 0;
+    border-radius: var(--br-xl);
+    width: 273px;
+    object-fit: cover;
+  }
+  .offer-card-1-parent,
+  .offer-card-6,
+  .offers-frame2 {
+    position: absolute;
+    top: 0;
+    left: 1445px;
+    width: 273px;
+    height: 204px;
+  }
+  .offer-card-1-parent,
+  .offers-frame2 {
+    left: 150px;
+    width: 1718px;
+  }
+  .offers-frame2 {
+    top: 1413px;
+    left: 0;
+    width: 1440px;
+    height: 218px;
+    overflow: hidden;
+    font-size: var(--font-size-mini);
+    color: var(--color-white);
+  }
+  .popular-places-child,
+  .popular-places-item {
+    position: absolute;
+    top: 0;
+    border-radius: var(--br-xl);
+  }
+  .popular-places-child {
+    left: -4px;
+    width: 378px;
+    height: 212px;
+    object-fit: cover;
+  }
+  .popular-places-item {
+    left: 0;
+    background: linear-gradient(-1.88deg, #000, transparent);
+    width: 370px;
+    height: 204px;
+  }
+  .chennai-to-delhi {
+    position: absolute;
+    top: 147px;
+    left: 40px;
+    display: inline-block;
+    width: 201px;
+  }
+  .popular-places-child1,
+  .popular-places-inner {
+    position: absolute;
+    top: 0;
+    border-radius: var(--br-xl);
+  }
+  .popular-places-inner {
+    left: 381px;
+    width: 378px;
+    height: 212px;
+    object-fit: cover;
+  }
+  .popular-places-child1 {
+    left: 385px;
+    background: linear-gradient(-1.88deg, #000, transparent);
+    width: 370px;
+    height: 204px;
+  }
+  .delhi-to-kolakta {
+    position: absolute;
+    top: 147px;
+    left: 425px;
+    display: inline-block;
+    width: 133.5px;
+  }
+  .popular-places-child2,
+  .popular-places-child3 {
+    position: absolute;
+    top: 0;
+    border-radius: var(--br-xl);
+  }
+  .popular-places-child2 {
+    left: 767px;
+    width: 378px;
+    height: 212px;
+    object-fit: cover;
+  }
+  .popular-places-child3 {
+    left: 771px;
+    background: linear-gradient(-1.12deg, #000, transparent);
+    width: 370px;
+    height: 204px;
+  }
+  .andhra-pradhesh-to {
+    position: absolute;
+    top: 132px;
+    left: 811px;
+    display: inline-block;
+    width: 261px;
+  }
+  .popular-places1 {
+    position: absolute;
+    top: 864px;
+    left: 150px;
+    width: 1141px;
+    height: 204px;
+    color: var(--color-white);
+  }
+  .train-home-inner {
+    position: absolute;
+    top: 201px;
+    left: 328px;
+    border-right: 2px solid var(--color-white);
+    box-sizing: border-box;
+    width: 2px;
+    height: 32px;
+  }
+  .offer-card-1-child1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-11xl);
+    background-color: var(--color-lavenderblush);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-gainsboro-100);
+    box-sizing: border-box;
+    width: 273px;
+    height: 247px;
+  }
+  .lorem-ipsum-dolor3,
+  .saves-time1 {
+    position: absolute;
+    top: 159px;
+    left: 26px;
+    display: inline-block;
+    width: 220px;
+  }
+  .saves-time1 {
+    top: 120px;
+    left: 87px;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    width: 98px;
+    height: 28px;
+  }
+  .offer-card-12,
+  .offer-card-3-child1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 273px;
+    height: 247px;
+  }
+  .offer-card-3-child1 {
+    border-radius: var(--br-11xl);
+    background-color: var(--color-ivory);
+    border: 1px solid var(--color-silver);
+    box-sizing: border-box;
+  }
+  .ipsum-dolor-sit3 {
+    position: absolute;
+    top: 159px;
+    left: 27px;
+    display: inline-block;
+    width: 220px;
+  }
+  .offers3 {
+    position: absolute;
+    top: 120px;
+    left: 114px;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    text-align: left;
+  }
+  .offer-card-32 {
+    position: absolute;
+    top: 0;
+    left: 578px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 273px;
+    height: 247px;
+  }
+  .cost-efficient1 {
+    position: absolute;
+    top: calc(50% - 3.5px);
+    left: 87px;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    text-align: left;
+  }
+  .offer-card-22,
+  .offer-card-4-inner {
+    position: absolute;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 273px;
+    height: 247px;
+  }
+  .offer-card-22 {
+    top: calc(50% - 123.5px);
+    left: 289px;
+  }
+  .offer-card-4-inner {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-11xl);
+    background-color: var(--color-aliceblue);
+    border: 1px solid var(--color-gainsboro-100);
+    box-sizing: border-box;
+  }
+  .food1 {
+    position: absolute;
+    top: 120px;
+    left: 118px;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    text-align: left;
+  }
+  .offer-card-42,
+  .why-us1 {
+    position: absolute;
+    height: 247px;
+  }
+  .offer-card-42 {
+    top: 0;
+    left: 867px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 273px;
+  }
+  .why-us1 {
+    top: 1722px;
+    left: 150px;
+    width: 1140px;
+    text-align: center;
+    font-size: var(--font-size-sm);
+  }
+  .navigation-bar-item {
+    position: absolute;
+    top: -24px;
+    left: -1192px;
+    background-color: var(--color-gainsboro-200);
+    width: 1440px;
+    height: 70px;
+    display: none;
+  }
+  .log-in-button-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-darkslateblue);
+    width: 92px;
+    height: 31px;
+    cursor: pointer;
+  }
+  .log-in1 {
+    position: absolute;
+    top: 4px;
+    left: 24px;
+    display: inline-block;
+    width: 45px;
+    height: 23px;
+  }
+  .log-in-button1,
+  .navigation-bar1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 92px;
+    height: 31px;
+  }
+  .navigation-bar1 {
+    top: 24px;
+    left: 1192px;
+    font-size: var(--font-size-mini);
+    color: var(--color-white);
+  }
+  .train-home-child1,
+  .train-home-child2,
+  .train-home-child3,
+  .train-home-child4,
+  .train-home-child5,
+  .train-home-child6 {
+    position: absolute;
+    top: 2212.5px;
+    left: 149.5px;
+    border-top: 1px solid var(--color-gray-200);
+    box-sizing: border-box;
+    width: 1045px;
+    height: 1px;
+    opacity: 0.5;
+  }
+  .train-home-child2,
+  .train-home-child3,
+  .train-home-child4,
+  .train-home-child5,
+  .train-home-child6 {
+    top: 2269.5px;
+  }
+  .train-home-child3,
+  .train-home-child4,
+  .train-home-child5,
+  .train-home-child6 {
+    top: 2326.5px;
+  }
+  .train-home-child4,
+  .train-home-child5,
+  .train-home-child6 {
+    top: 2378.5px;
+  }
+  .train-home-child5,
+  .train-home-child6 {
+    top: 2434.5px;
+  }
+  .train-home-child6 {
+    top: 2096.5px;
+  }
+  .train-home-child7,
+  .train-home-child8 {
+    position: absolute;
+    top: 2231px;
+    left: 1154px;
+    width: 18px;
+    height: 18px;
+  }
+  .train-home-child8 {
+    top: 2126px;
+    height: 2px;
+  }
+  .train-home-child10,
+  .train-home-child11,
+  .train-home-child9 {
+    position: absolute;
+    top: 2288px;
+    left: 1154px;
+    width: 18px;
+    height: 18px;
+  }
+  .train-home-child10,
+  .train-home-child11 {
+    top: 2345px;
+  }
+  .train-home-child11 {
+    top: 2402px;
+  }
+  .see-more {
+    position: absolute;
+    top: 1989px;
+    left: 1204px;
+    font-size: var(--font-size-lg);
+    color: var(--color-darkslateblue);
+    cursor: pointer;
+  }
+  .train-home-child12 {
+    position: absolute;
+    height: 0.81%;
+    width: 1.88%;
+    top: 10%;
+    right: 31.88%;
+    bottom: 89.19%;
+    left: 66.25%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .book1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    font-weight: 800;
+    width: 46px;
+    height: 20px;
+  }
+  .my-vacations1 {
+    top: 24px;
+    left: 0;
+    font-weight: 800;
+    color: var(--color-cornflowerblue);
+  }
+  .icon2,
+  .logo1,
+  .my-vacations1 {
+    position: absolute;
+  }
+  .logo1 {
+    top: 12px;
+    left: 230px;
+    width: 128px;
+    height: 48px;
+    color: var(--color-yellowgreen);
+  }
+  .icon2 {
+    top: 16px;
+    left: 165px;
+    width: 48px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .footer-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-cornsilk);
+    width: 1440px;
+    height: 466px;
+  }
+  .contact1,
+  .faq1,
+  .support1 {
+    position: absolute;
+    top: 48px;
+    left: 0.2px;
+    display: inline-block;
+    width: 75px;
+  }
+  .faq1,
+  .support1 {
+    top: 79px;
+    width: 76px;
+  }
+  .faq1 {
+    top: 110px;
+    width: 45px;
+  }
+  .company1,
+  .contact-group {
+    position: absolute;
+    top: 0;
+    width: 122.8px;
+  }
+  .company1 {
+    left: 0;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    font-family: var(--font-montserrat);
+    display: inline-block;
+  }
+  .contact-group {
+    left: 462px;
+    height: 133px;
+  }
+  .bus3,
+  .flights3,
+  .hotels3,
+  .trains3 {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    display: inline-block;
+    width: 66px;
+  }
+  .bus3,
+  .hotels3,
+  .trains3 {
+    top: 70px;
+    width: 62px;
+  }
+  .bus3,
+  .hotels3 {
+    top: 101px;
+    width: 35px;
+  }
+  .hotels3 {
+    top: 132px;
+    width: 62px;
+  }
+  .flights-group,
+  .quick-links1 {
+    position: absolute;
+    top: 0;
+    width: 155px;
+  }
+  .quick-links1 {
+    left: 0;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    font-family: var(--font-montserrat);
+    display: inline-block;
+  }
+  .flights-group {
+    left: 684px;
+    height: 155px;
+  }
+  .div,
+  .salesbookmyvacationsnowcom,
+  .ssv-complex-sri {
+    position: absolute;
+    top: 103px;
+    left: 0;
+    display: inline-block;
+    width: 282px;
+  }
+  .div,
+  .ssv-complex-sri {
+    top: 60px;
+    width: 108px;
+  }
+  .ssv-complex-sri {
+    top: 0;
+    width: 301px;
+    height: 40px;
+  }
+  .salesbookmyvacationsnowcom-parent {
+    position: absolute;
+    top: 201px;
+    left: 1px;
+    width: 301px;
+    height: 126px;
+  }
+  .bookmyvacations-has-been {
+    position: absolute;
+    top: 89px;
+    left: 0;
+    display: inline-block;
+    width: 364px;
+  }
+  .newsletter1 {
+    font-weight: 500;
+    display: inline-block;
+    width: 159px;
+  }
+  .email-item,
+  .email4,
+  .newsletter1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .email-item {
+    border-radius: var(--br-3xs);
+    border: 1px solid var(--primary);
+    box-sizing: border-box;
+    width: 272.5px;
+    height: 37px;
+  }
+  .email4 {
+    display: inline-block;
+    width: 134.5px;
+  }
+  .group-inner {
+    position: absolute;
+    top: 5.1px;
+    left: 221.7px;
+    border-radius: var(--br-3xs);
+    width: 21.4px;
+    height: 5.8px;
+  }
+  .email-container,
+  .email3 {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    width: 243.1px;
+    height: 18px;
+  }
+  .email3 {
+    top: 29px;
+    left: 0;
+    width: 272.5px;
+    height: 37px;
+    font-size: var(--font-size-xs);
+    font-family: var(--font-poppins);
+  }
+  .group-child1 {
+    position: absolute;
+    top: 102px;
+    left: 201px;
+    width: 73.2px;
+    height: 27.1px;
+  }
+  .newsletter-group {
+    position: absolute;
+    top: 5px;
+    left: 867px;
+    width: 273.3px;
+    height: 129.1px;
+    font-size: var(--font-size-base);
+    font-family: var(--font-montserrat);
+  }
+  .book2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    font-weight: 800;
+    width: 64px;
+    height: 20px;
+  }
+  .logo3,
+  .my-vacations2 {
+    position: absolute;
+    width: 202px;
+  }
+  .my-vacations2 {
+    top: 22px;
+    left: 0;
+    font-size: var(--font-size-5xl);
+    display: inline-block;
+    font-weight: 800;
+    color: var(--color-cornflowerblue);
+    height: 23px;
+  }
+  .logo3 {
+    top: 7px;
+    left: 87px;
+    height: 45px;
+  }
+  .icon3,
+  .logo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 68.2px;
+  }
+  .icon3 {
+    width: 81.8px;
+    object-fit: cover;
+  }
+  .logo2 {
+    width: 289px;
+    font-size: var(--font-size-xl);
+    color: var(--color-yellowgreen);
+  }
+  .footer1,
+  .group-container {
+    position: absolute;
+    top: 79px;
+    left: 150px;
+    width: 1140.3px;
+    height: 327px;
+  }
+  .footer1 {
+    top: 2605px;
+    left: 2px;
+    width: 1440px;
+    height: 466px;
+    opacity: 0.91;
+    font-size: var(--font-size-mini);
+  }
+  .clock-icon1 {
+    position: absolute;
+    height: 1.96%;
+    width: 7.67%;
+    top: 57.28%;
+    right: 76.28%;
+    bottom: 40.76%;
+    left: 16.04%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .food-icon1,
+  .layer-2-icon2,
+  .layer-3-icon,
+  .offer-icon1,
+  .vector-icon1 {
+    position: absolute;
+    height: 2.12%;
+    width: 4.51%;
+    top: 57.21%;
+    right: 57.78%;
+    bottom: 40.67%;
+    left: 37.71%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .food-icon1,
+  .layer-2-icon2,
+  .layer-3-icon,
+  .offer-icon1 {
+    height: 2.17%;
+    width: 4.41%;
+    top: 57.19%;
+    right: 37.86%;
+    bottom: 40.64%;
+    left: 57.73%;
+  }
+  .food-icon1,
+  .layer-2-icon2,
+  .layer-3-icon {
+    height: 2.16%;
+    width: 4.6%;
+    right: 17.6%;
+    bottom: 40.65%;
+    left: 77.81%;
+  }
+  .layer-2-icon2,
+  .layer-3-icon {
+    height: 1.1%;
+    width: 86.07%;
+    top: 21.07%;
+    right: 6.71%;
+    bottom: 77.83%;
+    left: 7.22%;
+  }
+  .layer-3-icon {
+    top: 49.01%;
+    bottom: 49.89%;
+  }
+  .train-home {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 3071px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-poppins);
+  }
+  
