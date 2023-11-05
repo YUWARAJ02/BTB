@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\BTB test\BTB\Back-end"/>
 			<item value="E:\sql\BTS\Booking"/>
 		</list>
 		<list key="projectNameTemplate">
