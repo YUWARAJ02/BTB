@@ -1,7 +1,9 @@
 import "./NavigationBar.css";
 import GroupComponent from "./GroupComponent";
+import { useState } from "react";
 
 const NavigationBar = () => {
+  const [condition,setCondition]=useState(false);
   return (
     <div className="fp">
   <nav className="rectangle-nav" id="navbar" >
@@ -13,7 +15,8 @@ const NavigationBar = () => {
         <i className="my-vacations1">MY VACATIONS</i>
       </div>
       </div>
-  </nav></div>
+  </nav>
+  </div>
   
   );
 };

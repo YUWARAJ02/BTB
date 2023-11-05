@@ -20,6 +20,7 @@ import "./global.css";
 import {
   Link
 } from "react-router-dom";
+import Places from "../components/Places";
 
 const TrainHome = () => {
   // useEffect(() => {
@@ -181,9 +182,17 @@ const TrainHome = () => {
     <Header/>
     </header>
     <main>
+      <h1 className="offertitle">
+      Offers
+      </h1>
     <article className="frame" id="offers" data-animate-on-scroll>
         <OffersFrame />
         <Layer2Icon />
+      </article>
+      <h1 className="popularplacetitle">
+       Popular places
+      </h1>
+      <article className="not">
       </article>
     </main>
     </div>
