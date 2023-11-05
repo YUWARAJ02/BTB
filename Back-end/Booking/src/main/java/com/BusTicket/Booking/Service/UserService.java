@@ -18,12 +18,17 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import jakarta.mail.MessagingException;
+
 @Service
 public class UserService {
 
 	private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 	@Autowired
 	UserRepository userRepository;
+
+	@Autowired
+	private EmailService emailService;
 
 	ObjectMapper mapper = new ObjectMapper();
 
@@ -32,7 +37,7 @@ public class UserService {
 	}
 
 	public ResponseEntity<?> add(User user) {
-		
+
 		return new ResponseEntity<>(userRepository.save(user), HttpStatus.OK);
 	}
 
@@ -46,22 +51,36 @@ public class UserService {
 
 		Long userId = userRepository.findUserIdByEmailIdAndPassword(json.get("email").asText(),
 				json.get("password").asText());
-		if(userId!=null) {
-		Map<String, String> res = new HashMap<>();
-		res.put("status", "ok");
-		res.put("auth_token", JwtUtil.generateToken(userId));
-		return new ResponseEntity<>(mapper.writeValueAsString(res), HttpStatus.OK);
-		}
-		else {
+		if (userId != null) {
+			Map<String, String> res = new HashMap<>();
+			res.put("status", "ok");
+			res.put("auth_token", JwtUtil.generateToken(userId));
+			return new ResponseEntity<>(mapper.writeValueAsString(res), HttpStatus.OK);
+		} else {
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 
 	public ResponseEntity<?> HomePage(JsonNode json) throws JsonMappingException, JsonProcessingException {
-		if(json==null)
+		if (json == null)
 			return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
 		JsonNode res = mapper.readTree(JwtUtil.parseToken(json.get("auth_token").asText()));
-		return new ResponseEntity<Long>(res.get("id").asLong(),HttpStatus.OK);
+		return new ResponseEntity<Long>(res.get("id").asLong(), HttpStatus.OK);
+	}
+
+	public ResponseEntity<?> OtpVerification() {
+
+		try {
+			String to[] = { "yuwaraj02@gmail.com" };
+
+			emailService.sendHtmlEmail(to, "testing", emailService.otpContent(to[0]));
+			return new ResponseEntity<String>("mail sent", HttpStatus.OK);
+
+		} catch (MessagingException e) {
+			e.printStackTrace();
+			return new ResponseEntity<String>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+
+		}
 	}
 
 }
