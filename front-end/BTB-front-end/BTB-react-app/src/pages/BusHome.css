@@ -3,23 +3,23 @@
     object-fit: cover;
   }
   .bg-img-icon1,
-  .train-home-child,
-  .train-home-item {
+  .bus-home-child,
+  .bus-home-item {
     position: absolute;
     top: 0;
     left: 0;
     width: 1440px;
   }
-  .train-home-child {
+  .bus-home-child {
     background-color: var(--color-gray-100);
     height: 72px;
     opacity: 0.3;
   }
-  .train-home-item {
+  .bus-home-item {
     background: linear-gradient(90.78deg, #000, transparent);
     height: 464px;
   }
-  .book-train-tickets,
+  .book-bus-tickets,
   .check-pnr-status {
     position: absolute;
     top: 206px;
@@ -34,7 +34,7 @@
     left: 343px;
     font-weight: 500;
   }
-  .trains2 {
+  .buss2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -70,7 +70,7 @@
     box-sizing: border-box;
     display: none;
   }
-  .trains-group {
+  .bus-group {
     position: absolute;
     top: 28px;
     left: calc(50% - 19px);
@@ -79,11 +79,11 @@
     color: var(--color-white);
     font-family: var(--font-montserrat);
   }
-  .search-trains {
+  .search-bus {
     position: relative;
     font-weight: 600;
   }
-  .search-trains-wrapper {
+  .search-bus-wrapper {
     position: absolute;
     top: 294px;
     left: 1016px;
@@ -205,7 +205,7 @@
   }
   .image-1-icon1,
   .instant-cashback-lp-1-icon1,
-  .train-ticket-lp1-1-icon1 {
+  .bus-ticket-lp1-1-icon1 {
     position: absolute;
     top: 0;
     left: 435px;
@@ -215,10 +215,10 @@
     object-fit: cover;
   }
   .image-1-icon1,
-  .train-ticket-lp1-1-icon1 {
+  .bus-ticket-lp1-1-icon1 {
     left: 724px;
   }
-  .train-ticket-lp1-1-icon1 {
+  .bus-ticket-lp1-1-icon1 {
     left: 146px;
   }
   .coupon-gift-for-new-user-desig-icon1,
@@ -582,7 +582,7 @@
     height: 204px;
     color: var(--color-white);
   }
-  .train-home-inner {
+  .bus-home-inner {
     position: absolute;
     top: 201px;
     left: 328px;
@@ -751,12 +751,12 @@
     font-size: var(--font-size-mini);
     color: var(--color-white);
   }
-  .train-home-child1,
-  .train-home-child2,
-  .train-home-child3,
-  .train-home-child4,
-  .train-home-child5,
-  .train-home-child6 {
+  .bus-home-child1,
+  .bus-home-child2,
+  .bus-home-child3,
+  .bus-home-child4,
+  .bus-home-child5,
+  .bus-home-child6 {
     position: absolute;
     top: 2212.5px;
     left: 149.5px;
@@ -766,57 +766,57 @@
     height: 1px;
     opacity: 0.5;
   }
-  .train-home-child2,
-  .train-home-child3,
-  .train-home-child4,
-  .train-home-child5,
-  .train-home-child6 {
+  .bus-home-child2,
+  .bus-home-child3,
+  .bus-home-child4,
+  .bus-home-child5,
+  .bus-home-child6 {
     top: 2269.5px;
   }
-  .train-home-child3,
-  .train-home-child4,
-  .train-home-child5,
-  .train-home-child6 {
+  .bus-home-child3,
+  .bus-home-child4,
+  .bus-home-child5,
+  .bus-home-child6 {
     top: 2326.5px;
   }
-  .train-home-child4,
-  .train-home-child5,
-  .train-home-child6 {
+  .bus-home-child4,
+  .bus-home-child5,
+  .bus-home-child6 {
     top: 2378.5px;
   }
-  .train-home-child5,
-  .train-home-child6 {
+  .bus-home-child5,
+  .bus-home-child6 {
     top: 2434.5px;
   }
-  .train-home-child6 {
+  .bus-home-child6 {
     top: 2096.5px;
   }
-  .train-home-child7,
-  .train-home-child8 {
+  .bus-home-child7,
+  .bus-home-child8 {
     position: absolute;
     top: 2231px;
     left: 1154px;
     width: 18px;
     height: 18px;
   }
-  .train-home-child8 {
+  .bus-home-child8 {
     top: 2126px;
     height: 2px;
   }
-  .train-home-child10,
-  .train-home-child11,
-  .train-home-child9 {
+  .bus-home-child10,
+  .bus-home-child11,
+  .-home-child9 {
     position: absolute;
     top: 2288px;
     left: 1154px;
     width: 18px;
     height: 18px;
   }
-  .train-home-child10,
-  .train-home-child11 {
+  .bus-home-child10,
+  .bus-home-child11 {
     top: 2345px;
   }
-  .train-home-child11 {
+  .bus-home-child11 {
     top: 2402px;
   }
   .see-more {
@@ -827,7 +827,7 @@
     color: var(--color-darkslateblue);
     cursor: pointer;
   }
-  .train-home-child12 {
+  .bus-home-child12 {
     position: absolute;
     height: 0.81%;
     width: 1.88%;
@@ -919,7 +919,7 @@
   .bus3,
   .flights3,
   .hotels3,
-  .trains3 {
+  .buss3 {
     position: absolute;
     top: 39px;
     left: 0;
@@ -928,7 +928,7 @@
   }
   .bus3,
   .hotels3,
-  .trains3 {
+  .buss3 {
     top: 70px;
     width: 62px;
   }
@@ -1175,7 +1175,7 @@
     top: 49.01%;
     bottom: 49.89%;
   }
-  .train-home {
+  .bus-home {
     position: relative;
     background-color: var(--color-white);
     width: 100%;

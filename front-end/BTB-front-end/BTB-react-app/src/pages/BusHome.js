@@ -27,13 +27,13 @@ const TrainHome = () => {
 
   return (
     <div className="fullpage">
-    {/* <div className="train-home">
-      <img className="bg-img-icon1" alt="" src="/bg-img1@2x.png" />
-      <div className="train-home-child" />
-      <div className="train-home-item" />
-      <b className="book-train-tickets">Book Train Tickets</b>
+    {/* <div className="bus-home">
+      <img className="bg-img-icon1" alt="" src="/bus_banner.jpg" />
+      <div className="bus-home-child" />
+      <div className="bus-home-item" />
+      <b className="book-train-tickets">Book Bus Tickets</b>
       <div className="check-pnr-status">Check PNR Status</div>
-      <div className="trains-group">
+      <div className="bus-group">
         <div className="trains2">Trains</div>
         <div className="hotels2">Hotels</div>
         <div className="flights2" onClick={onFlightsTextClick}>
@@ -82,7 +82,7 @@ const TrainHome = () => {
         />
         <img className="image-1-icon1" alt="" src="/image-11@2x.png" />
         <img
-          className="train-ticket-lp1-1-icon1"
+          className="bus-ticket-lp1-1-icon1"
           alt=""
           src="/trainticketlp1-11@2x.png"
         />
@@ -194,7 +194,7 @@ const TrainHome = () => {
         <div className="popular-places-child3" />
         <b className="andhra-pradhesh-to">Andhra Pradhesh to Kanyakumari</b>
       </div>
-      <div className="train-home-inner" />
+      <div className="bus-home-inner" />
       <div className="why-us1">
         <div className="offer-card-12">
           <div className="offer-card-1-child1" />
@@ -224,21 +224,21 @@ const TrainHome = () => {
           <div className="log-in1">Log in</div>
         </div>
       </div>
-      <div className="train-home-child1" />
-      <div className="train-home-child2" />
-      <div className="train-home-child3" />
-      <div className="train-home-child4" />
-      <div className="train-home-child5" />
-      <div className="train-home-child6" />
-      <img className="train-home-child7" alt="" src="/group-32.svg" />
-      <img className="train-home-child8" alt="" src="/group-36.svg" />
-      <img className="train-home-child9" alt="" src="/group-32.svg" />
-      <img className="train-home-child10" alt="" src="/group-32.svg" />
-      <img className="train-home-child11" alt="" src="/group-32.svg" />
+      <div className="bus-home-child1" />
+      <div className="bus-home-child2" />
+      <div className="bus-home-child3" />
+      <div className="bus-home-child4" />
+      <div className="bus-home-child5" />
+      <div className="bus-home-child6" />
+      <img className="bus-home-child7" alt="" src="/group-32.svg" />
+      <img className="bus-home-child8" alt="" src="/group-36.svg" />
+      <img className="bus-home-child9" alt="" src="/group-32.svg" />
+      <img className="bus-home-child10" alt="" src="/group-32.svg" />
+      <img className="bus-home-child11" alt="" src="/group-32.svg" />
       <div className="see-more" onClick={onSeeMoreTextClick}>
         See more
       </div>
-      <img className="train-home-child12" alt="" src="/group-75.svg" />
+      <img className="bus-home-child12" alt="" src="/group-75.svg" />
       <div className="logo1">
         <i className="book1">{`Book `}</i>
         <i className="my-vacations1">MY VACATIONS</i>
@@ -310,11 +310,6 @@ const TrainHome = () => {
     <article className="frame" id="offers" data-animate-on-scroll>
         <OffersFrame />
         <Layer2Icon />
-      </article>
-      <h1 className="popularplacetitle">
-       Popular places
-      </h1>
-      <article className="not">
       </article>
     </main>
     </div>
