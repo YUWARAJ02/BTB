@@ -3,8 +3,13 @@ import './Loginsignup.css';
 import email_icon from "./Assets/email.png";
 import password_icon from "./Assets/password.png";
 import Signup from './signup';
+import Forgetpassword from './Forgetpassword';
+import {Link} from "react-router-dom";
 
 const Loginsignup = () => {
+    const [showForgetPassword, setShowForgetPassword] = useState(false); // Add state for ForgetPassword component
+
+
     const [action, setAction] = useState("Login");
     const [formData, setFormData] = useState({
         email: '',
@@ -12,6 +17,7 @@ const Loginsignup = () => {
     });
     const [emailError, setEmailError] = useState('');
     const [showSignup, setShowSignup] = useState(false);
+
 
     const handleLogin = async () => {
         if (!validateEmail(formData.email)) {
@@ -30,7 +36,8 @@ const Loginsignup = () => {
     }
 
     const handleForgotPassword = () => {
-        console.log('Forgot Password logic goes here');
+        setShowForgetPassword(true); 
+        window.close();
     }
 
     const handleChange = (e) => {
@@ -47,10 +54,11 @@ const Loginsignup = () => {
     }
 
     return (
+
         <form onSubmit={(e) => {
             e.preventDefault();
             handleLogin();
-        }}>
+        }}> 
             <div className='background'>
                 <div className='container'>
                     <div className="header">
@@ -78,7 +86,7 @@ const Loginsignup = () => {
                                 value={formData.password}
                                 onChange={handleChange}
                             />
-                            <span className="forgot-password" onClick={handleForgotPassword}>Forgot Password ?</span>
+                           <Link to="/forgetpassword"> <span className="forgot-password" onClick={() => setShowForgetPassword(true)}>Forgot Password ?</span></Link>
                             <div className='signup-text' onClick={() => setShowSignup(true)}>New user!</div>
                         </div>
                     </div>
@@ -87,6 +95,7 @@ const Loginsignup = () => {
                     </div>
                 </div>
             </div>
+        
             {showSignup && <Signup />}
         </form>
     )

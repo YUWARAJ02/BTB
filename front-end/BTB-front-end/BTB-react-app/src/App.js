@@ -5,6 +5,7 @@ import "./pages/global.css"
 import React from 'react';
 import Header from "./components/Header";
 import TrainHome from "./pages/TrainHome";
+import Forgetpassword from "./components/Forgetpassword";
 
 
 
@@ -20,7 +21,10 @@ function App() {
     
     <div>
       <NavigationBar/>
-      <TrainHome/>
+      <Routes>
+    <Route path="/" element={<TrainHome/>}/>
+    <Route path="/forgetpassword" element={<Forgetpassword/>}/>
+    </Routes>
    </div>
     
   
