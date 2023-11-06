@@ -5,8 +5,8 @@ import "./pages/global.css"
 import React from 'react';
 import TrainHome from "./pages/TrainHome";
 import Forgetpassword from "./components/Forgetpassword";
-
-
+import BusHome from "./pages/BusHome";
+import FlightPage from "./pages/FlightPage";
 
 
 
@@ -24,6 +24,8 @@ function App() {
       <Routes>
     <Route path="/" element={<TrainHome/>}/>
     <Route path="/forgetpassword" element={<Forgetpassword/>}/>
+    <Route path="/bus" element={<BusHome/>}/>
+    <Route path="/flight" element={<FlightPage/>}/>
     </Routes>
     
    </div>   

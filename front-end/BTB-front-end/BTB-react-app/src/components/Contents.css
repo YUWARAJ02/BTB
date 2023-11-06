@@ -1,0 +1,160 @@
+@keyframes roll-in-left {
+    0% {
+      transform: translateX(-50px) rotate(-540deg);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+.head{
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 100%;
+    z-index: 2; 
+ }
+ .offertitle{
+    position: absolute;
+    top:71.5%;
+    left: 4%;
+    font-family: poppins;
+  }
+  .popularplacetitle{
+    position: absolute;
+    top:113%;
+    left: 4%;
+    font-family: poppins;
+  }
+  .not{
+    position: absolute;
+    width: 100%;
+    height:33%;
+    top: 124%;
+  
+  }
+  .divideplace{
+    position: absolute;
+    width: 100%;
+    height:30%;
+    top: 164%;
+  }
+  .meal{
+    position: absolute;
+    top: 195%;
+    left: 4%;
+    font-family: poppins;
+  }
+  .tree{
+    position: absolute;
+    width: 100%;
+    height:30%;
+    top: 206%;
+  }
+  .us{
+    position: absolute;
+    top: 236%;
+    left: 4%;
+    font-family: poppins;
+  }
+  .savetime{
+    position: absolute;
+    width: 100%;
+    height:35%;
+    top: 247%;
+  }
+  .spacefaq{
+    position: absolute;
+    width: 100%;
+    height:78%;
+    top: 288%;
+  }
+  .foot{
+    position: absolute;
+    width: 100%;
+    height:50%;
+    top: 375%;
+  align-items: center;
+  }
+  .can1,.can2,.can3,.can4{
+    position: absolute;
+    background-color:#D8EDFC;
+    top: 4.5%;
+    height: 90%;
+    width: 18%;
+    border: 2px solid #DEDEDE;
+    border-radius: var(--br-xl);
+    text-align: center;
+  }
+  .can1{
+    left: 3%;
+  }
+  .can2{
+    left: 28%;
+  }
+  .can3{
+    left: 53%;
+  }
+  .can4{
+    left: 78%;
+  }
+  .savestimes,.costefficient,.offerstext,.foodtext{
+    position: absolute;
+    left: 32%;
+    top: 50%;
+    font-family: poppins;
+    font-weight: 600;
+  }
+  .costefficient{
+     left: 30%;
+  }
+  .offerstext{
+     left: 40%;
+  }
+  .foodtext{
+    left: 42%;
+  }
+  .frame.animate {
+    animation: 1s ease 0s 1 normal forwards roll-in-left;
+  }
+  .frame{
+  position: absolute;
+  overflow: hidden;
+    top: 84%;
+    left: 0;
+    width: 100%;
+    height: 13.63rem;
+    opacity: 1;  
+    z-index:100;
+  
+  }
+  .faqtext{
+    position: relative;
+    font-family: poppins;
+    left: 4%;
+    
+  }
+details{
+    position: relative;
+    left: 5%;
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .train-home {
+      opacity: 0;
+    }
+    .train-home.animate {
+      animation: 1s ease 0s 1 normal forwards fade-in;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }

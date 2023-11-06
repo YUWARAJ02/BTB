@@ -40,7 +40,7 @@ const Header = () => {
   return (
     
     <div className="fullpage">
-      <div className="frame25">
+      <div className="frame256">
         <form onSubmit={handleSubmit}>
           <div className='formcomponents'>
             <label htmlFor="from" className='fromlabel1'>From:</label>

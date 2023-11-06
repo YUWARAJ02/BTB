@@ -1,10 +1,10 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import "./BusHome.css";
 import "./global.css";
 import OffersFrame from "../components/OffersFrame";
 import Layer2Icon from "../components/Layer2Icon";
 import BusHeader from "../components/BusHeader";
+import Contents from "../components/Contents";
 
 const TrainHome = () => {
   const navigate = useNavigate();
@@ -24,6 +24,13 @@ const TrainHome = () => {
   const onSeeMoreTextClick = useCallback(() => {
     // Please sync "Why us" to the project
   }, []);
+  const imageUrls = [
+    '/instantcashbacklp-1@2x.png',
+    '/trainticketlp1-1@2x.png',
+    '/image-1@2x.png',
+    'instantcashbacklp-1@2x.png',
+    'coupongiftfornewuserdesigntemplated79eb825d8d9cacba9f340652db93eba-screen-1@2x.png'
+  ];
 
   return (
     <div className="fullpage">
@@ -304,13 +311,14 @@ const TrainHome = () => {
     <BusHeader/>
     </header>
     <main>
-      <h1 className="offertitle">
+      {/* <h1 className="offertitle">
       Offers
       </h1>
     <article className="frame" id="offers" data-animate-on-scroll>
         <OffersFrame />
         <Layer2Icon />
-      </article>
+      </article> */}
+      <Contents imageUrls={imageUrls}/>
     </main>
     </div>
   );

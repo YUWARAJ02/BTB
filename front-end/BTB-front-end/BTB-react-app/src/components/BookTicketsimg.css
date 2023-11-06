@@ -6,8 +6,21 @@
   background: linear-gradient(90.28deg, #00418b, transparent);
   width: 80%;
   height: 100%;
+  z-index: 1;
+  text-align: left;
 }
 .booktickets{
-  width: 100%;
+  position:absolute;
+  width: 80%;
   height:100% ;
+  left: 10%;
+  z-index: 0;
+}
+.booktexting{
+  position: absolute;
+  color: antiquewhite;
+  font-family: poppins;
+  left: 10%;
+  top: 20%;
+
 }

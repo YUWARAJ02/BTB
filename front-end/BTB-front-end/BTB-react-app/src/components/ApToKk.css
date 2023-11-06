@@ -6,8 +6,20 @@
   background: linear-gradient(-1.12deg, #000, transparent);
   width: 27%;
   height: 100%;
+  z-index: 1;
 }
 .andhra{
+  position: absolute;
   height: 100%;
-  width: 100%;
+  width: 27%;
+  z-index: 0;
+  right: 5%;
+}
+.aptexting{
+  position: relative;
+  color: antiquewhite;
+  top: 75%;
+  font-family: poppins;
+  font-weight: 600;
+  left: 8%;
 }
