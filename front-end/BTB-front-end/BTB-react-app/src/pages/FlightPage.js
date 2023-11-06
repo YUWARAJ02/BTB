@@ -1,4 +1,6 @@
 import Contents from "../components/Contents";
+import FlightHead from "../components/FlightHead";
+import "./FlightPage.css";
 const FlightPage = () => {
   const imageUrls = [
     '/trainticketlp1-11@2x.png',
@@ -11,8 +13,9 @@ const FlightPage = () => {
   return (
     <div className="fullpage">
     <header className="head">
+      <FlightHead/>
     </header>
-    <main>
+    <main className="nothing">
     <Contents imageUrls={imageUrls}/>    
     </main>
    </div>

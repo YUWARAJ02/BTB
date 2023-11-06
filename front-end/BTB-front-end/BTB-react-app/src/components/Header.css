@@ -29,7 +29,7 @@
 
 
 .frame25 {
-  top: -10%;
+  
   background-image: url(/public/frame@3x.png);
   width: 100%;
   height: 100%;
@@ -45,7 +45,6 @@
 }
 .fullpage{
   height: 60%;
-  
 }
 .formcomponents{
   width:100%;

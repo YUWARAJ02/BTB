@@ -1,41 +1,42 @@
-.offers-frame-child {
-  position: absolute;
-  top: 3.19rem;
-  left: 86.69rem;
-  background-color: var(--color-gainsboro-300);
-  width: 21.5rem;
-  height: 6rem;
+.foodbody{
+  display: grid;
+  place-items:center;
+  z-index: 1;
 }
-.offers-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90rem;
-  height: 13.63rem;
+.foodsliders{
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 90%;
+  height: 100%;
   overflow: hidden;
 }
-.slider {
+.slide-track{
   display: flex;
-  overflow: hidden;
+  width:calc(350px * 10);
+  animation: scroll 10s linear infinite;
+}
+.foodslide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+  z-index: 1;
+}
+.fooodimages{
   width: 100%;
 }
-
-.slide {
-  animation:slideAnimation 15s linear infinite alternate;
+.fooodimages:hover{
+  transform: translatez(20px);
 }
-
-
-@keyframes slideAnimation {
-  0% {
-    transform: translateX(0%);
-    opacity: 1;
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
   }
-  50% {
-    transform: translateX(-100%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(100%);
-    opacity: 1;
+  100%{
+    transform: translateX(calc(-250px * 5));
   }
 }

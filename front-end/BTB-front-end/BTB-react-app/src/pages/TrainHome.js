@@ -57,9 +57,9 @@ const TrainHome = () => {
     '/instantcashbacklp-1@2x.png',
     '/trainticketlp1-1@2x.png',
     '/image-1@2x.png',
-    'instantcashbacklp-1@2x.png',
-    'coupongiftfornewuserdesigntemplated79eb825d8d9cacba9f340652db93eba-screen-1@2x.png',
-    'rectangle-19@2x.png'
+    '/phonepe-irctc-ticket-booking-offer-1@2x.png',
+    '/coupongiftfornewuserdesigntemplated79eb825d8d9cacba9f340652db93eba-screen-1@2x.png',
+    '/rectangle-19@2x.png'
   ];
   return (
     

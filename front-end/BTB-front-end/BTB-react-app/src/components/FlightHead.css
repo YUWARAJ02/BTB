@@ -1,0 +1,221 @@
+
+  .frame-child6 {
+    position: absolute;
+    top: 28.1%;
+    left: 22.3%;
+    border-right: 2px solid var(--color-white);
+    box-sizing: border-box;
+    width: 0.13rem;
+    height: 4.5%;
+  }
+  
+  
+  .frame255 {
+    background-image: url(/public/Bgimg.png);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+    z-index: 2; 
+  }
+  .fullpage{
+    height: 60%;
+  }
+  .frominput{
+    left:  10%;
+    }
+     
+     .fromlabel{
+    width: 10%;
+    left: 10%;
+     }
+    .tolabel{
+    width: 10%;
+    left: 26.5%;
+    }
+    .toinput{
+    left: 26.5%;
+    }
+    .departurelabel{
+    width: 11%;
+    left: 43.5%;
+    height: 10%;
+    }
+    .departureinput{
+    left: 43.5%;
+    }
+    .frominput,.toinput,.departureinput,.returninput{
+      position: absolute;
+      width:13%;
+      height: 5%;
+      background: #FFFFFF;
+      border-radius: 10px;
+      top: 31%;
+    }
+    .returninput{
+      Left:62%;
+    }
+    .returnlabel,.fromlabel,.tolabel,.departurelabel{
+      position: absolute;
+     height: 36px;
+     top: 26%;
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 150%;
+     line-height: 37px;
+     color: #FFFFFF;
+    }
+    .returnlabel{
+      width: 10%;
+    height: 36px;
+    left: 62%;
+    
+    }
+    .roundlabel{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      width: 4.6875rem;
+      height: 1.25rem;
+    left: 20%;
+    top: 8.75rem;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 20px;
+      /* identical to box height */
+      
+      color: #FFFFFF;
+    }
+    .roundinput{
+      margin: 0;
+    }
+    .travellerinput{
+      width: 40px;
+      margin: 0;
+      border: none;
+      outline: none; 
+    }
+    .input-wrapper {
+    position: absolute;
+    width: 321px;
+    height: 50px;
+    left: 150px;
+    top: 351px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    }
+    .travellerlabel{
+    position: absolute;
+    width: 272px;
+    height: 36px;
+    left: 150px;
+    top: 305px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    }
+    .classinput{
+      top: 380px;
+    }
+    .texttravel{
+    /* 1 Traveller */
+    position: absolute;
+    width: 11px;
+    height: 22px;
+    left: 100px;
+    top: 371px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    color: #000000;
+    
+    
+    }
+    .onewaylabel{
+      /* One way */
+    text-align: center;
+      display: flex;
+      align-items: center;
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    left: 10%;
+    top: 140px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 20px;
+    
+    /* identical to box height */
+    color: #FFFFFF;
+    
+    
+    }
+    .searchflightsbutton:hover {
+      background: #0F6AC0; /* Change the background color on hover */
+    }
+    .searchflightsbutton{
+        position: absolute;
+     background-color: #0C54A6;
+     width: 16%;
+     height: 7%;
+     left: 40%;
+     bottom: 44%;
+     font-family: 'Montserrat';
+     font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    }
+ .popupdiv{
+        /* Group 63 */
+
+position: absolute;
+width: 23%;
+height: 50%;
+left: 15%;
+top: 60%;
+z-index: 2000;
+background-color: black;
+
+
+
+/* Polygon 1 */
+
+/* position: absolute;
+width: 32px;
+height: 30px;
+left: 281px;
+top: 428px;
+
+background: #FFFFFF; */
+
+
+
+
+ }
+    
+
+  
+ 

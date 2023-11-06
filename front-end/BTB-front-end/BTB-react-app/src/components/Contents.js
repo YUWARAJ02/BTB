@@ -68,45 +68,49 @@ function Contents({imageUrls}) {
       <div className="can1">
       <img className="frame-icon" alt="" src="/frame1.svg" />
       <div className="savestimes">Saves time</div>
+      <div className='savestimes1'>Time saved is money earned</div>
       </div>
       <div className="can2">
       <img className="frame-icon1" alt="" src="/frame2.svg" />
       <div className="costefficient">Cost Efficient</div>
+      <div className='costefficient1'>Saving on costs today, investing in tomorrow</div>
       </div>
       <div className="can3">
       <img className="frame-icon2" alt="" src="/frame3.svg" />
       <div className="offerstext">Offers</div>
+      <div className='offerstext1'>Unwrap Savings, Discover Joy</div>
       </div>
       <div className="can4">
       <img className="frame-icon3" alt="" src="/frame4.svg" />
       <div className="foodtext">Food</div>
+      <div className='foodtext1'>Eat well, feel well</div>
       </div>
       </article>
       <article className="spacefaq">
       <h2 className='faqtext'>FAQs</h2>
        <details>
            <summary>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui ?</summary>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore to Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+           <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore to Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </div>
        </details>
-       <br />
+       <hr />
        <details>
            <summary>Sed ut perspiciatis unde omnis iste natus error sit?</summary>
-           <p>No comments</p>
+           <div>No comments</div>
        </details>
-       <br />
+       <hr />
        <details>
            <summary>Quis autem vel eum iure reprehenderit qui in ea voluptate velit?</summary>
-           <p>No comments</p>
+           <div>No comments</div>
        </details>
-       <br />
+       <hr />
        <details>
            <summary>Sed ut perspiciatis unde omnis iste natus error sit?</summary>
-           <p>No comments</p>
+           <div>No comments</div>
        </details>
-       <br />
+       <hr />
        <details>
            <summary>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui ?</summary>
-           <p>No comments</p>
+           <div>No comments</div>
        </details>
       </article>
     </main>

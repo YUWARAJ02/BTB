@@ -2,20 +2,22 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-size: var(--font-size-11xl);
+  font-size: 25px;
   display: inline-block;
   color: var(--color-white);
-  width: 17rem;
+  width: 100%;
   height: 2.25rem;
 }
 .to-child1 {
   position: absolute;
-  top: 2.88rem;
+  top: 38%;
   left: 0;
   border-radius: var(--br-3xs);
   background-color: var(--color-white);
-  width: 20.06rem;
+  width: 50%;
   height: 4.81rem;
+  text-align: center;
+  cursor: pointer;
 }
 .traveller1 {
   top: 4.13rem;
@@ -29,16 +31,22 @@
 }
 .economy2 {
   top: 5.06rem;
-  left: 13.38rem;
+  left: 28%;
   font-weight: 500;
 }
 .to8 {
-  top: 19.06rem;
-  left: 9.38rem;
-  width: 20.06rem;
+  top:41%;
+  left: 10%;
+  width: 50%;
   height: 7.69rem;
   text-align: left;
   font-size: var(--font-size-lg);
   color: var(--color-black);
   font-family: var(--font-montserrat);
+}
+.travelstext{
+  position: relative;
+  top: 30%;
+  font-family: var(--font-montserrat);
+  font-weight: 500;
 }

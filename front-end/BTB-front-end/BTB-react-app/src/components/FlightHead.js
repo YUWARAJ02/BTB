@@ -1,40 +1,40 @@
-import React, { useState,useEffect} from 'react';
-import "./FlightHeader.css";
-import Travellerandclass from "./Travellerandclass";
-import "./Popuptravellers.css";
-const FlightHeader = () => {
+import React, { useState } from 'react';
+import "./FlightHead.css";
+import Travellerandclass from './Travellerandclass';
 
-  const [formData, setFormData] = useState({
-    // oneWay: false,
-    // roundTrip: true,
-    from: '',
-    to: '',
-    departureDate: '',
-    returnDate: '',
-    travelerCount: 1,
-    travelClass: 'economy'
-  });
+const FlightHead = () => {
+    const [formData, setFormData] = useState({
+        // oneWay: false,
+        // roundTrip: true,
+        from: '',
+        to: '',
+        departureDate: '',
+        returnDate: '',
+        travelerCount: 1,
+        travelClass: 'economy'
+      });
+    
+      const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        if (type === 'radio') {
+          setFormData({
+            ...formData,
+            tripType: value
+          });
+        } else if (type === 'checkbox') {
+          setFormData({
+            ...formData,
+            [name]: checked
+          });
+        }
+        else{
+        setFormData({
+          ...formData,
+          [name]: value
+        });
+      }
+      }
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    if (type === 'radio') {
-      setFormData({
-        ...formData,
-        tripType: value
-      });
-    } else if (type === 'checkbox') {
-      setFormData({
-        ...formData,
-        [name]: checked
-      });
-    }
-    else{
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  }
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,8 +42,9 @@ const FlightHeader = () => {
     console.log(formData);
   }
   return (
-    <div className="flightfullpage">
-    <div className="frame24">
+    
+    <div className="fullpage">
+      <div className="frame255">
       <form onSubmit={handleSubmit}>
       <div className='onewaylabel'>
         <label  className='o'>
@@ -119,6 +120,7 @@ const FlightHeader = () => {
           </>
         )}
         <Travellerandclass/>
+        <div className='popupdiv'></div>
         {/* <div className="input-container">
   <label htmlFor="travelerCount" className='travellerlabel'>Traveller & class</label>
  
@@ -146,15 +148,12 @@ const FlightHeader = () => {
     </select>
   </div>
 </div> */}
-
         <input className='searchflightsbutton' type="submit" value="Search Flights" /> 
       </form>
       </div>
-      <div className="frame-child6" />
-     
-      </div>
-    
+    </div>
+
   );
 };
 
-export default FlightHeader;
+export default FlightHead;

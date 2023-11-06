@@ -1,4 +1,4 @@
-.footer{
+/* .footer{
     top:162.5rem
 }
 .frame112{
@@ -89,4 +89,10 @@
     font-size: var(--font-size-lg);
     color: var(--accent);
     cursor: pointer;
-  }
+  } */
+.nothing{
+  z-index: 1;
+}
+.head{
+  z-index: 2;
+}

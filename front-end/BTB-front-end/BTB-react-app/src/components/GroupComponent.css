@@ -12,4 +12,7 @@
   font-family: var(--font-montserrat);
   color: var(--color-white);
 }
+.current-location {
+  color: #FFC845; /* Change to desired color for current location */
+}
 /* 1.63rem */

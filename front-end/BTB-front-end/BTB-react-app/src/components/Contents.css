@@ -8,6 +8,17 @@
       opacity: 1;
     }
   }
+  @keyframes borderBlink {
+    0% {
+      border-color: black;
+    }
+    50%{
+      border-color: gray;
+    }
+    100% {
+      border-color: wheat; /* Change to desired border color */
+    }
+  }
 .head{
     position: absolute;
     top:10%;
@@ -73,9 +84,9 @@
   .foot{
     position: absolute;
     width: 100%;
-    height:50%;
+    height:40%;
     top: 375%;
-  align-items: center;
+   align-items: center;
   }
   .can1,.can2,.can3,.can4{
     position: absolute;
@@ -83,9 +94,10 @@
     top: 4.5%;
     height: 90%;
     width: 18%;
-    border: 2px solid #DEDEDE;
+    border: 2px solid black;
     border-radius: var(--br-xl);
     text-align: center;
+    animation: borderBlink 1s infinite alternate;
   }
   .can1{
     left: 3%;
@@ -100,20 +112,17 @@
     left: 78%;
   }
   .savestimes,.costefficient,.offerstext,.foodtext{
-    position: absolute;
-    left: 32%;
-    top: 50%;
+    position: relative;
+    left: 25%;
+    top: 48%;
     font-family: poppins;
     font-weight: 600;
+    width: 50%;
   }
-  .costefficient{
-     left: 30%;
-  }
-  .offerstext{
-     left: 40%;
-  }
-  .foodtext{
-    left: 42%;
+  .savestimes1,.foodtext1,.costefficient1,.offerstext1{
+    position: relative;
+    font-family: poppins;
+    top: 48%;
   }
   .frame.animate {
     animation: 1s ease 0s 1 normal forwards roll-in-left;
@@ -140,6 +149,10 @@ details{
     left: 5%;
     font-size: larger;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+hr{
+  position: relative;
+  left: 5%;
 }
 
 @media screen and (max-width: 1200px) {

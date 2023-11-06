@@ -1,22 +1,4 @@
-.book-train-tickets {
-    top: 12.88rem;
-    left: 9.38rem;
-    width: 10.31rem;
-    height: 1.44rem;
-  }
-  .book-train-tickets,
-  .check-pnr-status,
-  .from1 {
-    position: absolute;
-    display: inline-block;
-  }
-  .check-pnr-status {
-    top: 12.88rem;
-    left: 21.44rem;
-    font-weight: 500;
-    width: 10.31rem;
-    height: 1.44rem;
-  }
+
   .from1 {
     top: 0;
     left: 0;
@@ -78,34 +60,6 @@
     overflow: hidden;
     max-height: 100%;
   }
- 
-  .navigation-bar-child {
-    position: absolute;
-    top: 1.5rem;
-    left: 74.5rem;
-    background-color: var(--color-gainsboro-200);
-    width: 90rem;
-    height: 4.38rem;
-    display: none;
-  }
-  .log-in-button,
-  .navigation-bar {
-    position: absolute;
-    width: 5.75rem;
-    height: 1.94rem;
-  }
-  .log-in-button {
-    top: 0;
-    left: 0;
-  }
-  .navigation-bar {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    top: 1.5rem;
-    left: 74.5rem;
-  }
   .date2 {
     position: absolute;
     top: 0;
@@ -162,12 +116,10 @@ flex-grow: 0;
 
   }
   .frame24 {
-    margin-right: 2rem;
-    top: 0;
-    margin-left:-2.5rem;
-    background-image: url(/public/Bgimg.png);
-    width: 90rem;
-    height: 28.94rem;
+    top: -10%;
+    background-image: url(/public/frame@3x.png);
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,6 +128,7 @@ flex-grow: 0;
     font-size: var(--font-size-base);
     color: var(--color-white);
     font-family: var(--font-montserrat);
+    z-index: 2; 
   }
   /* .fromlabel{
     
@@ -187,8 +140,8 @@ flex-grow: 0;
     width: 6rem;
     height: 2.25rem;
   } */
-  .fullpage{
-    margin-right:4rem;
+.flightfullpage{
+    height: 60%;
   }
  
   .frominput{

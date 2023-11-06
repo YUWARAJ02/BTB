@@ -7,6 +7,8 @@ import TrainHome from "./pages/TrainHome";
 import Forgetpassword from "./components/Forgetpassword";
 import BusHome from "./pages/BusHome";
 import FlightPage from "./pages/FlightPage";
+import HotelHome from "./pages/HotelHome";
+// import ChatFormContainer from "./components/ChatFormContainer";
 
 
 
@@ -26,7 +28,9 @@ function App() {
     <Route path="/forgetpassword" element={<Forgetpassword/>}/>
     <Route path="/bus" element={<BusHome/>}/>
     <Route path="/flight" element={<FlightPage/>}/>
+    <Route path="/hotel" element={<HotelHome/>}/>
     </Routes>
+    {/* <ChatFormContainer/> */}
     
    </div>   
   );
