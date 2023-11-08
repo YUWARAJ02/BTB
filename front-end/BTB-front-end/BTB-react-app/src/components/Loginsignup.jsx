@@ -8,8 +8,6 @@ import {Link} from "react-router-dom";
 
 const Loginsignup = () => {
     const [showForgetPassword, setShowForgetPassword] = useState(false); // Add state for ForgetPassword component
-
-
     const [action, setAction] = useState("Login");
     const [formData, setFormData] = useState({
         email: '',
@@ -17,7 +15,6 @@ const Loginsignup = () => {
     });
     const [emailError, setEmailError] = useState('');
     const [showSignup, setShowSignup] = useState(false);
-
 
     const handleLogin = async () => {
         if (!validateEmail(formData.email)) {
@@ -36,8 +33,7 @@ const Loginsignup = () => {
     }
 
     const handleForgotPassword = () => {
-        setShowForgetPassword(true); 
-        window.close();
+        setShowForgetPassword(true);
     }
 
     const handleChange = (e) => {
@@ -54,11 +50,10 @@ const Loginsignup = () => {
     }
 
     return (
-
         <form onSubmit={(e) => {
             e.preventDefault();
             handleLogin();
-        }}> 
+        }}>
             <div className='background'>
                 <div className='container'>
                     <div className="header">
@@ -86,7 +81,7 @@ const Loginsignup = () => {
                                 value={formData.password}
                                 onChange={handleChange}
                             />
-                           <Link to="/forgetpassword"> <span className="forgot-password" onClick={() => setShowForgetPassword(true)}>Forgot Password ?</span></Link>
+                           <span className="forgot-password" onClick={handleForgotPassword}>Forgot Password ?</span>
                             <div className='signup-text' onClick={() => setShowSignup(true)}>New user!</div>
                         </div>
                     </div>
@@ -95,8 +90,8 @@ const Loginsignup = () => {
                     </div>
                 </div>
             </div>
-        
             {showSignup && <Signup />}
+            {showForgetPassword && <Forgetpassword />}
         </form>
     )
 }
